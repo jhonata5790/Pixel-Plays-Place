@@ -177,8 +177,7 @@ const jogos = [
       "assets/capas/pixel-not-found.svg",
 
     acaoDireta: true
-  }
-,
+  },
 
 
   // =========================================
