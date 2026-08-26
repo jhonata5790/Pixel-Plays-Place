@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Not Found — projeto em Scratch desenvolvido por Caio Augusto.">
+  <title>Pixel Not Found | Pixel Plays Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pixel-not-found.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="topbar">
+  <div class="container topbar-content">
+    <a href="../index.html" class="brand">
+      <span class="brand-box">PP</span>
+      <span>Pixel Plays Place</span>
+    </a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#jogar">Jogar</a>
+      <a href="#visual">Visual</a>
+      <a href="#criador">Criador</a>
+    </nav>
+
+    <a class="scratch-small" href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer">
+      Scratch ↗
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="glitch-bg" aria-hidden="true">
+      <span style="--x:7%;--y:19%;--r:-16deg">Error</span>
+      <span style="--x:68%;--y:23%;--r:18deg">Error</span>
+      <span style="--x:15%;--y:57%;--r:-8deg">error</span>
+      <span style="--x:70%;--y:62%;--r:11deg">Burn</span>
+      <span style="--x:4%;--y:83%;--r:3deg">Error</span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="status">[ ERROR 404: PIXEL FOUND ]</p>
+        <h1>
+          <span>PIXEL</span>
+          <span class="green">NOT FOUND</span>
+        </h1>
+        <p class="lead">
+          Uma experiência 2D criada no Scratch com estética de falha digital,
+          mensagens de erro e uma identidade visual dominada por preto e verde.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#jogar" class="pixel-button primary">▶ JOGAR AQUI</a>
+          <a href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer" class="pixel-button secondary">ABRIR NO SCRATCH ↗</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>SCRATCH</span>
+          <i></i>
+          <span>2D</span>
+          <i></i>
+          <span>CAIO AUGUSTO</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <img src="../assets/capas/pixel-not-found.svg" alt="Capa de Pixel Not Found">
+      </div>
+    </div>
+  </section>
+
+  <section class="play-section" id="jogar">
+    <div class="container">
+      <div class="section-head reveal">
+        <span>01 // EXECUTAR</span>
+        <h2>O sistema ainda <em>responde.</em></h2>
+      </div>
+
+      <div class="game-terminal reveal">
+        <div class="terminal-bar">
+          <div class="terminal-lights"><span></span><span></span><span></span></div>
+          <strong>pixel-not-found.exe</strong>
+          <span>ONLINE</span>
+        </div>
+
+        <div class="scratch-frame">
+          <iframe
+            src="https://scratch.mit.edu/projects/1181292053/embed"
+            allowtransparency="true"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            title="Pixel Not Found no Scratch"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visual-section" id="visual">
+    <div class="container visual-grid">
+      <div class="section-head reveal">
+        <span>02 // IDENTIDADE</span>
+        <h2>Erro virou <em>linguagem visual.</em></h2>
+      </div>
+
+      <div class="visual-cards">
+        <article class="visual-card reveal">
+          <span class="code">#00FF41</span>
+          <h3>Verde de sistema</h3>
+          <p>Textos, bordas e elementos visuais remetem a terminais e mensagens de falha.</p>
+        </article>
+
+        <article class="visual-card reveal">
+          <span class="code">ERROR()</span>
+          <h3>Glitch e repetição</h3>
+          <p>Palavras quebradas e erros espalhados pelo cenário fazem parte da identidade do jogo.</p>
+        </article>
+
+        <article class="visual-card reveal">
+          <span class="code">8-BIT</span>
+          <h3>Pixel art</h3>
+          <p>Formas quadradas e elementos simples reforçam o visual digital e experimental.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="creator-section" id="criador">
+    <div class="container creator-card reveal">
+      <div>
+        <span class="creator-label">03 // DESENVOLVIMENTO</span>
+        <h2>Caio Augusto</h2>
+        <p>Desenvolvedor de Pixel Not Found.</p>
+      </div>
+
+      <div class="creator-avatar">CA</div>
+    </div>
+  </section>
+
+  <section class="final-section">
+    <div class="container final-card reveal">
+      <p>&gt; RUN PROJECT_1181292053</p>
+      <h2>PIXEL NOT FOUND</h2>
+      <a href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer" class="pixel-button primary">
+        ABRIR PROJETO NO SCRATCH ↗
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <a href="../index.html#jogos">← Voltar ao catálogo</a>
+    <span>Pixel Not Found • Caio Augusto</span>
+    <span>© <span id="currentYear"></span> Pixel Plays Place</span>
+  </div>
+</footer>
+
+<script src="pixel-not-found.js"></script>
+</body>
+</html>
