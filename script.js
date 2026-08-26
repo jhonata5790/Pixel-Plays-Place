@@ -88,6 +88,51 @@ const jogos = [
 
     // Voltz pode ser aberto direto pela home.
     acaoDireta: true
+  },
+
+
+  // =========================================
+  // LUZES NA PELE
+  // =========================================
+  {
+    id: "luzes-na-pele",
+
+    nome: "Luzes na Pele",
+
+    categoria: "individual",
+
+    categoriaNome: "Projeto individual",
+
+    tipo: "scratch",
+
+    plataforma: "Scratch",
+
+    engine: "Scratch",
+
+    genero: [
+      "Pixel Art",
+      "2D",
+      "Scratch"
+    ],
+
+    equipe: [
+      "Nathalie"
+    ],
+
+    descricao:
+      "Um projeto em pixel art criado no Scratch, com identidade visual marcada por tons terrosos, luzes recortadas e formas pixeladas.",
+
+    link:
+      "https://scratch.mit.edu/projects/1204124581",
+
+    pagina:
+      "jogos/luzes-na-pele.html",
+
+    capa:
+      "assets/capas/luzes-na-pele.svg",
+
+    // Pode abrir o Scratch direto pela home.
+    acaoDireta: true
   }
 
 ];
