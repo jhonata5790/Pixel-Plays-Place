@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lummy Light Knowledge — aventura educacional criada por Erick Diego e Gabriel Barbosa.">
+  <title>Lummy Light Knowledge | Pixel Plays Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lummy.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="ambient-particles" id="ambientParticles"></div>
+
+<header class="topbar">
+  <div class="container topbar-content">
+    <a href="../index.html" class="brand">
+      <span class="brand-icon">PP</span>
+      <span><strong>Pixel Plays Place</strong><small>Game Showcase</small></span>
+    </a>
+
+    <nav>
+      <a href="#historia">História</a>
+      <a href="#jornada">Jornada</a>
+      <a href="#chefes">Chefes</a>
+      <a href="#combate">Combate</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+
+    <a class="header-play" href="https://etilyomaluco.github.io/Lummy/" target="_blank" rel="noopener noreferrer">
+      Jogar agora ↗
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="menu-scene" id="menuScene" aria-hidden="true">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/ceu.png" class="scene-layer sky" alt="">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/fundo3.png" class="scene-layer castle" alt="">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/fundo2.png" class="scene-layer village" alt="">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/fundo.png" class="scene-layer forest" alt="">
+    <div class="scene-shade"></div>
+  </div>
+
+  <img class="hero-lummy" src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/lummy.png" alt="Lummy">
+
+  <div class="hero-bosses" aria-hidden="true">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Papyrus.png" alt="">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Sans.png" alt="">
+    <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Valeria.png" alt="">
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-copy reveal">
+      <div class="badges">
+        <span>PROJETO EM GRUPO</span>
+        <span>JOGO WEB</span>
+      </div>
+
+      <p class="hero-kicker">A luz do conhecimento abre caminhos.</p>
+
+      <h1>
+        <span>Lummy</span>
+        <small>Light Knowledge</small>
+      </h1>
+
+      <p class="hero-description">
+        Explore a Vila Lamparina, atravesse o Castelo das Matérias
+        e enfrente desafios educacionais para libertar os amigos de Lummy.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://etilyomaluco.github.io/Lummy/" target="_blank" rel="noopener noreferrer" class="gold-button">
+          ▶ Jogar Lummy
+        </a>
+        <a href="#historia" class="ghost-button">Conhecer a jornada</a>
+      </div>
+
+      <div class="hero-meta">
+        <span>Exploração 2D</span><i></i>
+        <span>Quiz + combate</span><i></i>
+        <span>4 matérias</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">DESCER <span>↓</span></div>
+</section>
+
+<section class="story-section section" id="historia">
+  <div class="container story-grid">
+    <div class="section-heading reveal">
+      <span>01 / HISTÓRIA</span>
+      <h2>Da Vila Lamparina ao <em>Castelo das Matérias.</em></h2>
+    </div>
+
+    <article class="story-card reveal">
+      <div class="lantern">✦</div>
+      <p>
+        Lummy vive na pequena e antiga <strong>Vila Lamparina</strong>.
+        A tranquilidade termina quando os chefões das matérias invadem a vila,
+        capturam seus amigos e os levam para o misterioso Castelo das Matérias.
+      </p>
+      <p>
+        Ao descobrir o que aconteceu, Lummy parte para o castelo.
+        Para chegar ao resgate, precisa conquistar conhecimento, acender os
+        Orbes do Saber e superar as provas que bloqueiam seu caminho.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="journey-section section" id="jornada">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span>02 / JORNADA</span>
+      <h2>Um mundo pequeno, mas com <em>progressão real.</em></h2>
+    </div>
+
+    <div class="journey-grid">
+      <article class="journey-card reveal">
+        <div class="journey-visual village-card">
+          <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/casa_lamparina_01.svg" alt="">
+          <img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/lummy_frente.svg" alt="" class="mini-lummy">
+        </div>
+        <span>ETAPA 01</span>
+        <h3>Vila Lamparina</h3>
+        <p>Explore em visão top-down, converse com o Guardião, encontre o Selo do Saber e abra o caminho para a jornada.</p>
+      </article>
+
+      <article class="journey-card reveal">
+        <div class="journey-visual castle-card">
+          <div class="castle-symbol">✦</div>
+          <div class="orb-row"><i>I</i><i>∑</i><i>P</i><i>G</i></div>
+        </div>
+        <span>ETAPA 02</span>
+        <h3>Castelo das Matérias</h3>
+        <p>O salão principal acompanha quatro provas. Inglês e Matemática começam selando a porta principal e os Orbes registram o avanço.</p>
+      </article>
+
+      <article class="journey-card reveal">
+        <div class="journey-visual ending-card">
+          <span class="light-ray"></span>
+          <strong>4 / 4</strong>
+          <small>ORBES DO SABER</small>
+        </div>
+        <span>ETAPA 03</span>
+        <h3>O retorno da luz</h3>
+        <p>Com as quatro provas concluídas, Lummy pode alcançar o resgate dos três amigos e o final da beta.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bosses-section section" id="chefes">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span>03 / CHEFÕES</span>
+      <h2>Quatro matérias. Quatro <em>provas.</em></h2>
+    </div>
+
+    <div class="boss-grid">
+      <article class="boss-card english reveal">
+        <div class="boss-image"><img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Muffet.png" alt="My Muffet"></div>
+        <span>INGLÊS</span>
+        <h3>My Muffet</h3>
+        <p>Questões de Inglês e uma rota que permite compreender a chefe e encerrá-la sem destruição.</p>
+      </article>
+
+      <article class="boss-card math reveal">
+        <div class="boss-image"><img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Sans.png" alt="Sant's"></div>
+        <span>MATEMÁTICA</span>
+        <h3>Sant's</h3>
+        <p>Uma prova matemática em que observar, conversar e resolver juntos pode desbloquear uma alternativa ao confronto.</p>
+      </article>
+
+      <article class="boss-card portuguese reveal">
+        <div class="boss-image"><img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Papyrus.png" alt="Don Cascudo"></div>
+        <span>PORTUGUÊS</span>
+        <h3>Don Cascudo</h3>
+        <p>Gramática, interpretação e leitura entram na batalha. A versão atual da beta usa uma rota principal para concluir essa prova.</p>
+      </article>
+
+      <article class="boss-card geography reveal">
+        <div class="boss-image"><img src="https://raw.githubusercontent.com/etilyomaluco/Lummy/main/img/Valeria.png" alt="Valeria"></div>
+        <span>GEOGRAFIA</span>
+        <h3>Valeria</h3>
+        <p>Mapas, paisagens, coordenadas e outros conteúdos de Geografia formam o último desafio do castelo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="battle-section section" id="combate">
+  <div class="container battle-grid">
+    <div class="section-heading reveal">
+      <span>04 / SISTEMA DE BATALHA</span>
+      <h2>Responder é só <em>metade do combate.</em></h2>
+      <p>
+        O sistema combina perguntas educacionais com comandos de interação,
+        vida do jogador e do chefe e uma fase defensiva em que Lummy precisa
+        sobreviver aos ataques.
+      </p>
+    </div>
+
+    <div class="battle-console reveal">
+      <div class="battle-head">
+        <span>LUMMY</span>
+        <div class="hp"><i></i></div>
+        <strong>20 HP</strong>
+      </div>
+
+      <div class="battle-box">
+        <span class="heart">♥</span>
+        <i class="projectile p1"></i>
+        <i class="projectile p2"></i>
+        <i class="projectile p3"></i>
+        <i class="projectile p4"></i>
+      </div>
+
+      <div class="battle-commands">
+        <button>QUIZ</button>
+        <button>AGIR</button>
+        <button>ITEM</button>
+        <button>POUPAR</button>
+      </div>
+
+      <p class="battle-caption">
+        As rotas de poupar estão implementadas para Matemática e Inglês;
+        Português e Geografia ainda indicam rotas alternativas como conteúdo fora da beta atual.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="features-section section">
+  <div class="container">
+    <div class="feature-grid">
+      <article class="feature reveal"><span>WASD</span><h3>Exploração</h3><p>Movimentação top-down com colisões, profundidade e interação pelo teclado.</p></article>
+      <article class="feature reveal"><span>?</span><h3>Perguntas</h3><p>Questões de Matemática, Inglês, Português e Geografia com alternativas e explicações.</p></article>
+      <article class="feature reveal"><span>♥</span><h3>Defesa</h3><p>Após os turnos, o jogador enfrenta padrões de ataque dentro de uma arena.</p></article>
+      <article class="feature reveal"><span>✦</span><h3>Escolhas</h3><p>Parte das batalhas reconhece decisões de confronto ou misericórdia e registra resultados.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="team-section section" id="equipe">
+  <div class="container team-card reveal">
+    <div>
+      <span>05 / DESENVOLVIMENTO</span>
+      <h2>Erick Diego<br><em>& Gabriel Barbosa</em></h2>
+      <p>O próprio menu de créditos do jogo identifica Erick Diego e Gabriel Barbosa como desenvolvedores do Lummy Light Knowledge.</p>
+    </div>
+    <div class="team-side">
+      <div class="member"><b>E</b><span><strong>Erick Diego</strong><small>Desenvolvedor</small></span></div>
+      <div class="member"><b>G</b><span><strong>Gabriel Barbosa</strong><small>Desenvolvedor</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container final-panel reveal">
+    <span>VILA LAMPARINA PRECISA DE VOCÊ</span>
+    <h2>A jornada começa com uma luz.</h2>
+    <p>O jogo roda diretamente no navegador.</p>
+    <a href="https://etilyomaluco.github.io/Lummy/" target="_blank" rel="noopener noreferrer" class="gold-button">▶ JOGAR LUMMY LIGHT KNOWLEDGE</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <a href="../index.html#jogos">← Voltar ao catálogo</a>
+    <span>Lummy Light Knowledge • Erick Diego & Gabriel Barbosa</span>
+    <span>© <span id="currentYear"></span> Pixel Plays Place</span>
+  </div>
+</footer>
+
+<script src="lummy.js"></script>
+</body>
+</html>
