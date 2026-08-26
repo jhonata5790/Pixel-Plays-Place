@@ -69,7 +69,9 @@ const jogos = [
     ],
 
     equipe: [
-      "Jhonata"
+      "Jhonata",
+      "Pedro Gabriel",
+      "Pedro Vidal"
     ],
 
     descricao:
