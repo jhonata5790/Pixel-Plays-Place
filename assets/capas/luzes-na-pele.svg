@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Luzes na Pele</title>
+  <desc id="desc">Capa em pixel art com fundo marrom e manchas bege de luz.</desc>
+  <rect width="1280" height="720" fill="#4a3716"/>
+  <g fill="#baa784" shape-rendering="crispEdges" opacity=".94">
+    <path d="M0 0h120v80h55v70h-42v64H74v58H0z"/>
+    <path d="M205 42h64v54h44v72h-80v-39h-53V74h25z"/>
+    <path d="M420 0h91v70h52v55h-37v86h-88v-61h-65V81h47z"/>
+    <path d="M660 28h118v49h57v74h-66v66H689v-45h-76V93h47z"/>
+    <path d="M930 0h92v71h60v69h-48v72h-91v-54h-72V65h59z"/>
+    <path d="M1164 38h116v170h-47v70h-69v-49h-55V115h55z"/>
+    <path d="M34 472h108v-58h72v66h55v91h-78v61h-88v-55H34z"/>
+    <path d="M326 401h66v-68h86v58h53v88h-49v70h-91v-43h-65z"/>
+    <path d="M592 488h79v-81h96v54h60v87h-71v89h-95v-55h-69z"/>
+    <path d="M900 390h73v-58h102v77h49v70h-63v71h-91v-56h-70z"/>
+    <path d="M1134 462h71v-60h75v318h-157v-81h-57v-79h68z"/>
+  </g>
+  <g fill="#e5d8b7" shape-rendering="crispEdges" opacity=".55">
+    <rect x="130" y="290" width="42" height="42"/>
+    <rect x="1080" y="286" width="58" height="58"/>
+    <rect x="535" y="257" width="35" height="35"/>
+    <rect x="820" y="595" width="39" height="39"/>
+  </g>
+  <rect x="214" y="222" width="852" height="276" rx="0" fill="#2c220f" opacity=".92"/>
+  <rect x="228" y="236" width="824" height="248" fill="none" stroke="#d5c29d" stroke-width="4"/>
+  <text x="640" y="332" text-anchor="middle" fill="#eadfca" font-family="monospace" font-size="34" font-weight="700" letter-spacing="8">LUZES NA</text>
+  <text x="640" y="424" text-anchor="middle" fill="#f1e5c8" font-family="monospace" font-size="82" font-weight="900" letter-spacing="5">PELE</text>
+  <text x="640" y="462" text-anchor="middle" fill="#bbaa88" font-family="monospace" font-size="18" letter-spacing="4">PIXEL ART • SCRATCH</text>
+</svg>
