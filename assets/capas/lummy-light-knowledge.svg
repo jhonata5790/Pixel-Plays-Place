@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#07142d"/>
+    <stop offset=".58" stop-color="#183867"/>
+    <stop offset="1" stop-color="#406c83"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#ffe98a" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#ffe98a" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="1280" height="720" fill="url(#sky)"/>
+<circle cx="650" cy="170" r="170" fill="url(#glow)" opacity=".32"/>
+<g fill="#0a1730">
+  <path d="M570 315h140v210H570z"/>
+  <path d="M600 245h80v280h-80z"/>
+  <path d="M625 190h30v335h-30z"/>
+  <path d="M535 355h35v170h-35zM710 355h35v170h-35z"/>
+</g>
+<g fill="#172f35">
+  <path d="M0 540L120 450l100 60 100-95 120 95 120-75 110 85 110-70 120 80 110-75 140 85v180H0z"/>
+</g>
+<g fill="#f2d35e">
+  <circle cx="125" cy="470" r="5"/><circle cx="235" cy="518" r="4"/><circle cx="1015" cy="500" r="5"/><circle cx="1120" cy="455" r="4"/>
+</g>
+<text x="640" y="560" text-anchor="middle" fill="#fff6bc" font-family="Georgia,serif" font-size="92" font-weight="700">Lummy</text>
+<text x="640" y="615" text-anchor="middle" fill="#e4be49" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="12">LIGHT KNOWLEDGE</text>
+<text x="640" y="665" text-anchor="middle" fill="#d8e7ff" font-family="Arial,sans-serif" font-size="20">ERICK DIEGO • GABRIEL BARBOSA</text>
+</svg>
