@@ -4,6 +4,8 @@ document.addEventListener(
 
     atualizarAno();
 
+    adicionarCreditosVoltz();
+
     iniciarReveal();
 
     iniciarScrollProgress();
@@ -34,6 +36,28 @@ function atualizarAno() {
 
   yearElement.textContent =
     new Date().getFullYear();
+
+}
+
+
+
+/* =========================================
+   CRÉDITOS DO VOLTZ
+========================================= */
+
+function adicionarCreditosVoltz() {
+
+  const footerText =
+    document.querySelector(".footer-brand p");
+
+
+  if (!footerText) {
+    return;
+  }
+
+
+  footerText.textContent =
+    "Criado por Jhonata, Pedro Gabriel e Pedro Vidal • Parceria com a turma de Marketing.";
 
 }
 
