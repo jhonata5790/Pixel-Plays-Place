@@ -178,6 +178,52 @@ const jogos = [
 
     acaoDireta: true
   }
+,
+
+
+  // =========================================
+  // LUMMY LIGHT KNOWLEDGE
+  // =========================================
+  {
+    id: "lummy-light-knowledge",
+
+    nome: "Lummy Light Knowledge",
+
+    categoria: "grupo",
+
+    categoriaNome: "Projeto em grupo",
+
+    tipo: "site",
+
+    plataforma: "Web",
+
+    engine: "Web",
+
+    genero: [
+      "Aventura",
+      "Educacional",
+      "2D"
+    ],
+
+    equipe: [
+      "Erick Diego",
+      "Gabriel Barbosa"
+    ],
+
+    descricao:
+      "Uma aventura educacional em que Lummy explora a Vila Lamparina, enfrenta quatro provas no Castelo das Matérias e usa conhecimento para resgatar seus amigos.",
+
+    link:
+      "https://etilyomaluco.github.io/Lummy/",
+
+    pagina:
+      "jogos/lummy.html",
+
+    capa:
+      "assets/capas/lummy-light-knowledge.svg",
+
+    acaoDireta: true
+  }
 
 ];
 
