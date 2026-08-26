@@ -133,6 +133,50 @@ const jogos = [
 
     // Pode abrir o Scratch direto pela home.
     acaoDireta: true
+  },
+
+
+  // =========================================
+  // PIXEL NOT FOUND
+  // =========================================
+  {
+    id: "pixel-not-found",
+
+    nome: "Pixel Not Found",
+
+    categoria: "individual",
+
+    categoriaNome: "Projeto individual",
+
+    tipo: "scratch",
+
+    plataforma: "Scratch",
+
+    engine: "Scratch",
+
+    genero: [
+      "Pixel Art",
+      "2D",
+      "Scratch"
+    ],
+
+    equipe: [
+      "Caio Augusto"
+    ],
+
+    descricao:
+      "Uma experiência 2D criada no Scratch com estética de erro digital, mensagens de falha e uma identidade visual marcada por preto e verde.",
+
+    link:
+      "https://scratch.mit.edu/projects/1181292053",
+
+    pagina:
+      "jogos/pixel-not-found.html",
+
+    capa:
+      "assets/capas/pixel-not-found.svg",
+
+    acaoDireta: true
   }
 
 ];
