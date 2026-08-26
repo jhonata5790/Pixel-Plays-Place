@@ -1,4 +1,52 @@
 const jogos = [
+
+  // =========================================
+  // FOCUSLY
+  // =========================================
+  {
+    id: "focusly",
+
+    nome: "Focusly",
+
+    categoria: "marketing",
+
+    categoriaNome: "Parceria com Marketing",
+
+    tipo: "download",
+
+    plataforma: "Windows",
+
+    engine: "Unity",
+
+    genero: [
+      "Quiz",
+      "Educacional",
+      "2D"
+    ],
+
+    equipe: [
+      "Anny",
+      "Arthur"
+    ],
+
+    descricao:
+      "Um quiz educacional com desafios de Matemática, Geografia, História e Português, sistema de pontuação, tempo, dicas, loja e power-ups.",
+
+    pagina:
+      "jogos/focusly.html",
+
+    capa:
+      "assets/capas/focusly.png",
+
+    // Focusly NÃO baixa direto pela home.
+    // O usuário entra primeiro na página própria.
+    acaoDireta: false
+  },
+
+
+  // =========================================
+  // VOLTZ EDUCATION
+  // =========================================
   {
     id: "voltz-education",
 
@@ -25,7 +73,7 @@ const jogos = [
     ],
 
     descricao:
-      "Um RPG educacional onde aprendizado, exploração e progressão se encontram em uma experiência criada para transformar o estudo em aventura.",
+      "Um RPG educacional em mundo aberto onde aprendizado, exploração e progressão fazem parte da mesma aventura.",
 
     link:
       "https://jhonata5790.github.io/Voltz-pages/",
@@ -33,19 +81,20 @@ const jogos = [
     pagina:
       "jogos/voltz.html",
 
-    /*
-      Quando você tiver uma capa:
+    capa:
+      "assets/capas/voltz.png",
 
-      capa: "assets/capas/voltz.png"
-
-      Enquanto estiver vazio, o site cria
-      automaticamente um banner estilizado.
-    */
-    capa: "assets/capas/voltz.png"
+    // Voltz pode ser aberto direto pela home.
+    acaoDireta: true
   }
+
 ];
 
 
+
+/* =========================================
+   ELEMENTOS DO HTML
+========================================= */
 
 const gamesGrid =
   document.getElementById("gamesGrid");
@@ -58,15 +107,32 @@ const filters =
 
 
 
+/* =========================================
+   CRIAR CARD
+========================================= */
+
 function criarCard(jogo) {
 
   const card =
     document.createElement("article");
 
+
   card.classList.add("game-card");
 
+  card.dataset.category =
+    jogo.categoria;
+
+  card.dataset.id =
+    jogo.id;
+
+
+
+  /* =====================================
+     CAPA
+  ===================================== */
 
   let coverHTML = "";
+
 
   if (jogo.capa) {
 
@@ -74,35 +140,73 @@ function criarCard(jogo) {
       <img
         src="${jogo.capa}"
         alt="Capa do jogo ${jogo.nome}"
+        loading="lazy"
+        onerror="this.parentElement.innerHTML = criarPlaceholderHTML('${jogo.nome}')"
       >
     `;
 
   } else {
 
-    const initials =
-      jogo.nome
-        .split(" ")
-        .map(palavra => palavra[0])
-        .slice(0, 2)
-        .join("");
+    coverHTML =
+      criarPlaceholderHTML(jogo.nome);
 
-    coverHTML = `
-      <div class="game-placeholder">
-        <span>${initials}</span>
-      </div>
-    `;
   }
 
 
+
+  /* =====================================
+     TAGS
+  ===================================== */
+
   const tagsHTML =
     jogo.genero
-      .map(tag => `<span>${tag}</span>`)
+      .map(
+        genero =>
+          `<span>${genero}</span>`
+      )
       .join("");
 
+
+
+  /* =====================================
+     EQUIPE
+  ===================================== */
 
   const equipeHTML =
     jogo.equipe.join(", ");
 
+
+
+  /* =====================================
+     BOTÃO DIRETO
+  ===================================== */
+
+  let botaoDiretoHTML = "";
+
+
+  if (
+    jogo.acaoDireta &&
+    jogo.link
+  ) {
+
+    botaoDiretoHTML = `
+      <a
+        href="${jogo.link}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="game-button play-button"
+      >
+        ${obterTextoBotao(jogo.tipo)}
+      </a>
+    `;
+
+  }
+
+
+
+  /* =====================================
+     HTML DO CARD
+  ===================================== */
 
   card.innerHTML = `
 
@@ -152,7 +256,10 @@ function criarCard(jogo) {
       </div>
 
 
-      <div class="game-actions">
+      <div
+        class="game-actions
+        ${jogo.acaoDireta ? "" : "single-action"}"
+      >
 
         <a
           href="${jogo.pagina}"
@@ -162,14 +269,7 @@ function criarCard(jogo) {
         </a>
 
 
-        <a
-          href="${jogo.link}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="game-button play-button"
-        >
-          ${obterTextoBotao(jogo.tipo)}
-        </a>
+        ${botaoDiretoHTML}
 
       </div>
 
@@ -178,98 +278,247 @@ function criarCard(jogo) {
 
 
   return card;
+
 }
 
 
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+function criarPlaceholderHTML(nome) {
+
+  const iniciais =
+    nome
+      .split(" ")
+      .filter(Boolean)
+      .map(
+        palavra =>
+          palavra.charAt(0)
+      )
+      .slice(0, 2)
+      .join("")
+      .toUpperCase();
+
+
+  return `
+    <div class="game-placeholder">
+
+      <span>
+        ${iniciais}
+      </span>
+
+    </div>
+  `;
+
+}
+
+
+
+/* =========================================
+   TIPO DO JOGO
+========================================= */
 
 function obterTipo(tipo) {
 
   const tipos = {
-    site: "🌐 Jogo Web",
-    scratch: "🐱 Scratch",
-    download: "⬇ Download",
-    webgl: "🎮 WebGL"
+
+    site:
+      "🌐 Jogo Web",
+
+    scratch:
+      "🐱 Scratch",
+
+    download:
+      "🎮 Unity",
+
+    webgl:
+      "🎮 WebGL"
+
   };
 
-  return tipos[tipo] || "🎮 Jogo";
+
+  return tipos[tipo] ||
+    "🎮 Jogo";
+
 }
 
 
+
+/* =========================================
+   TEXTO DO BOTÃO DIRETO
+========================================= */
 
 function obterTextoBotao(tipo) {
 
-  const botoes = {
-    site: "Jogar agora",
-    scratch: "Abrir Scratch",
-    download: "Baixar",
-    webgl: "Jogar agora"
+  const textos = {
+
+    site:
+      "Jogar agora",
+
+    scratch:
+      "Abrir Scratch",
+
+    download:
+      "Baixar",
+
+    webgl:
+      "Jogar agora"
+
   };
 
-  return botoes[tipo] || "Abrir";
+
+  return textos[tipo] ||
+    "Abrir";
+
 }
 
 
 
-function renderizarJogos(filtro = "todos") {
+/* =========================================
+   FILTRAR JOGOS
+========================================= */
+
+function obterJogosFiltrados(
+  filtro
+) {
+
+  if (
+    filtro === "todos"
+  ) {
+
+    return jogos;
+
+  }
+
+
+  return jogos.filter(
+    jogo =>
+      jogo.categoria === filtro
+  );
+
+}
+
+
+
+/* =========================================
+   RENDERIZAR
+========================================= */
+
+function renderizarJogos(
+  filtro = "todos"
+) {
+
+  if (!gamesGrid) {
+    return;
+  }
+
 
   gamesGrid.innerHTML = "";
 
 
   const jogosFiltrados =
-    filtro === "todos"
-      ? jogos
-      : jogos.filter(
-          jogo => jogo.categoria === filtro
-        );
+    obterJogosFiltrados(
+      filtro
+    );
 
 
-  if (jogosFiltrados.length === 0) {
 
-    emptyState.style.display = "block";
+  if (
+    jogosFiltrados.length === 0
+  ) {
+
+    if (emptyState) {
+
+      emptyState.style.display =
+        "block";
+
+    }
 
     return;
 
   }
 
 
-  emptyState.style.display = "none";
+
+  if (emptyState) {
+
+    emptyState.style.display =
+      "none";
+
+  }
 
 
-  jogosFiltrados.forEach(jogo => {
 
-    const card =
-      criarCard(jogo);
+  jogosFiltrados.forEach(
+    jogo => {
 
-    gamesGrid.appendChild(card);
+      const card =
+        criarCard(jogo);
 
-  });
+
+      gamesGrid.appendChild(
+        card
+      );
+
+    }
+  );
+
 }
 
 
 
-filters.forEach(botao => {
+/* =========================================
+   BOTÕES DOS FILTROS
+========================================= */
 
-  botao.addEventListener("click", () => {
+function iniciarFiltros() {
 
-    filters.forEach(item =>
-      item.classList.remove("active")
-    );
+  filters.forEach(
+    botao => {
+
+      botao.addEventListener(
+        "click",
+        () => {
+
+          filters.forEach(
+            item => {
+
+              item.classList.remove(
+                "active"
+              );
+
+            }
+          );
 
 
-    botao.classList.add("active");
+          botao.classList.add(
+            "active"
+          );
 
 
-    const filtro =
-      botao.dataset.filter;
+          const filtro =
+            botao.dataset.filter;
 
 
-    renderizarJogos(filtro);
+          renderizarJogos(
+            filtro
+          );
 
-  });
+        }
+      );
 
-});
+    }
+  );
+
+}
 
 
+
+/* =========================================
+   ESTATÍSTICAS
+========================================= */
 
 function atualizarEstatisticas() {
 
@@ -280,50 +529,372 @@ function atualizarEstatisticas() {
   const totalParcerias =
     jogos.filter(
       jogo =>
-        jogo.categoria === "marketing"
+        jogo.categoria ===
+        "marketing"
     ).length;
 
 
   const plataformas =
     new Set(
       jogos.map(
-        jogo => jogo.plataforma
+        jogo =>
+          jogo.plataforma
       )
     );
 
 
-  document.getElementById(
-    "totalJogos"
-  ).textContent =
-    totalJogos;
+
+  const totalJogosElement =
+    document.getElementById(
+      "totalJogos"
+    );
 
 
-  document.getElementById(
-    "totalParcerias"
-  ).textContent =
-    totalParcerias;
+  const totalParceriasElement =
+    document.getElementById(
+      "totalParcerias"
+    );
 
 
-  document.getElementById(
-    "totalPlataformas"
-  ).textContent =
-    plataformas.size;
+  const totalPlataformasElement =
+    document.getElementById(
+      "totalPlataformas"
+    );
+
+
+
+  if (totalJogosElement) {
+
+    totalJogosElement.textContent =
+      totalJogos;
+
+  }
+
+
+  if (totalParceriasElement) {
+
+    totalParceriasElement.textContent =
+      totalParcerias;
+
+  }
+
+
+  if (totalPlataformasElement) {
+
+    totalPlataformasElement.textContent =
+      plataformas.size;
+
+  }
+
 }
 
 
+
+/* =========================================
+   ANO AUTOMÁTICO
+========================================= */
 
 function atualizarAno() {
 
-  const ano =
+  const currentYear =
+    document.getElementById(
+      "currentYear"
+    );
+
+
+  if (!currentYear) {
+    return;
+  }
+
+
+  currentYear.textContent =
     new Date().getFullYear();
 
-  document.getElementById(
-    "currentYear"
-  ).textContent =
-    ano;
 }
 
 
+
+/* =========================================
+   SCROLL SUAVE DOS LINKS INTERNOS
+========================================= */
+
+function iniciarScrollInterno() {
+
+  const linksInternos =
+    document.querySelectorAll(
+      'a[href^="#"]'
+    );
+
+
+  linksInternos.forEach(
+    link => {
+
+      link.addEventListener(
+        "click",
+        event => {
+
+          const href =
+            link.getAttribute(
+              "href"
+            );
+
+
+          if (
+            !href ||
+            href === "#"
+          ) {
+            return;
+          }
+
+
+          const destino =
+            document.querySelector(
+              href
+            );
+
+
+          if (!destino) {
+            return;
+          }
+
+
+          event.preventDefault();
+
+
+          destino.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        }
+      );
+
+    }
+  );
+
+}
+
+
+
+/* =========================================
+   HEADER AO ROLAR
+========================================= */
+
+function iniciarHeaderScroll() {
+
+  const header =
+    document.querySelector(
+      ".header"
+    );
+
+
+  if (!header) {
+    return;
+  }
+
+
+  function atualizarHeader() {
+
+    if (
+      window.scrollY > 30
+    ) {
+
+      header.classList.add(
+        "scrolled"
+      );
+
+    } else {
+
+      header.classList.remove(
+        "scrolled"
+      );
+
+    }
+
+  }
+
+
+  window.addEventListener(
+    "scroll",
+    atualizarHeader,
+    {
+      passive: true
+    }
+  );
+
+
+  atualizarHeader();
+
+}
+
+
+
+/* =========================================
+   ANIMAÇÃO SIMPLES DOS CARDS
+========================================= */
+
+function iniciarAnimacaoCards() {
+
+  if (
+    !("IntersectionObserver" in window)
+  ) {
+    return;
+  }
+
+
+  const observer =
+    new IntersectionObserver(
+
+      entries => {
+
+        entries.forEach(
+          entry => {
+
+            if (
+              !entry.isIntersecting
+            ) {
+              return;
+            }
+
+
+            entry.target.classList.add(
+              "card-visible"
+            );
+
+
+            observer.unobserve(
+              entry.target
+            );
+
+          }
+        );
+
+      },
+
+      {
+        threshold: 0.1
+      }
+
+    );
+
+
+
+  const cards =
+    document.querySelectorAll(
+      ".game-card"
+    );
+
+
+  cards.forEach(
+    card =>
+      observer.observe(card)
+  );
+
+}
+
+
+
+/* =========================================
+   OBSERVAR NOVOS CARDS APÓS FILTROS
+========================================= */
+
+function observarCardsAtuais() {
+
+  if (
+    !("IntersectionObserver" in window)
+  ) {
+    return;
+  }
+
+
+  const cards =
+    document.querySelectorAll(
+      ".game-card"
+    );
+
+
+  cards.forEach(
+    card => {
+
+      requestAnimationFrame(
+        () => {
+
+          card.classList.add(
+            "card-visible"
+          );
+
+        }
+      );
+
+    }
+  );
+
+}
+
+
+
+/* =========================================
+   RENDER COM ANIMAÇÃO
+========================================= */
+
+function renderizarJogosComAnimacao(
+  filtro = "todos"
+) {
+
+  renderizarJogos(
+    filtro
+  );
+
+
+  observarCardsAtuais();
+
+}
+
+
+
+/* =========================================
+   FILTROS COM ANIMAÇÃO
+========================================= */
+
+function iniciarFiltrosComAnimacao() {
+
+  filters.forEach(
+    botao => {
+
+      botao.addEventListener(
+        "click",
+        () => {
+
+          filters.forEach(
+            item =>
+              item.classList.remove(
+                "active"
+              )
+          );
+
+
+          botao.classList.add(
+            "active"
+          );
+
+
+          renderizarJogosComAnimacao(
+            botao.dataset.filter
+          );
+
+        }
+      );
+
+    }
+  );
+
+}
+
+
+
+/* =========================================
+   INICIAR SITE
+========================================= */
 
 function iniciarSite() {
 
@@ -333,9 +904,21 @@ function iniciarSite() {
 
   atualizarAno();
 
+  iniciarScrollInterno();
+
+  iniciarHeaderScroll();
+
+  iniciarFiltrosComAnimacao();
+
+  iniciarAnimacaoCards();
+
 }
 
 
+
+/* =========================================
+   DOM READY
+========================================= */
 
 document.addEventListener(
   "DOMContentLoaded",
