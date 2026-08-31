@@ -310,7 +310,7 @@ const jogos = [
       "jogos/infantus.html",
 
     capa:
-      "assets/capas/infantus.webp",
+      "assets/capas/infantus.png",
 
     acaoDireta: true
   }
