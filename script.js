@@ -233,9 +233,9 @@ const jogos = [
 
     nome: "Hora do Saber",
 
-    categoria: "outros",
+    categoria: "marketing",
 
-    categoriaNome: "Projeto Scratch",
+    categoriaNome: "Parceria com Marketing",
 
     tipo: "scratch",
 
@@ -249,10 +249,11 @@ const jogos = [
       "Pixel Art"
     ],
 
-    equipe: [],
-
-    metaSecundaria:
-      "Owli • mascote",
+    equipe: [
+      "Caio",
+      "Nathalie",
+      "Giulia"
+    ],
 
     descricao:
       "Um quiz educacional em que o jogador responde várias perguntas de cada matéria, recebe sua pontuação ao final da etapa e então avança para a próxima.",
