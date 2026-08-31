@@ -269,6 +269,52 @@ const jogos = [
 
     acaoDireta: true
   }
+,
+
+
+  // =========================================
+  // INFANTUS
+  // =========================================
+  {
+    id: "infantus",
+
+    nome: "Infantus",
+
+    categoria: "grupo",
+
+    categoriaNome: "Projeto em grupo",
+
+    tipo: "scratch",
+
+    plataforma: "Scratch",
+
+    engine: "Scratch",
+
+    genero: [
+      "Narrativa",
+      "Educacional",
+      "Escolhas"
+    ],
+
+    equipe: [
+      "Gabriel",
+      "Anny"
+    ],
+
+    descricao:
+      "Uma história interativa sobre segurança infantil e autopreservação em que o jogador controla uma criança, enfrenta situações de risco e aprende através das próprias escolhas.",
+
+    link:
+      "https://scratch.mit.edu/projects/1204385721",
+
+    pagina:
+      "jogos/infantus.html",
+
+    capa:
+      "assets/capas/infantus.webp",
+
+    acaoDireta: true
+  }
 
 ];
 
