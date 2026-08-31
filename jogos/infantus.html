@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infantus — jogo educacional em Scratch sobre escolhas, segurança e autopreservação. Desenvolvido por Gabriel e Anny, com todas as artes feitas por Anny.">
+  <title>Infantus | Pixel Plays Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="infantus.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">PP</span>
+        <span>
+          <strong>Pixel Plays Place</strong>
+          <small>Game Showcase</small>
+        </span>
+      </a>
+
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#jornada">Jornada</a>
+        <a href="#escolhas">Escolhas</a>
+        <a href="#arte">Arte</a>
+        <a href="#jogar">Jogar</a>
+      </nav>
+
+      <a class="top-action" href="https://scratch.mit.edu/projects/1204385721" target="_blank" rel="noopener noreferrer">
+        Abrir Scratch ↗
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-orb orb-pink"></div>
+      <div class="hero-orb orb-blue"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">SCRATCH • V1.1 DEMO</span>
+          <h1>INFANTUS</h1>
+          <p class="hero-lead">
+            Uma história interativa sobre decisões, segurança infantil e
+            autopreservação — onde uma escolha simples pode mudar completamente
+            o rumo do dia.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#jogar" class="button primary">▶ Jogar aqui</a>
+            <a href="#sobre" class="button secondary">Conhecer o jogo</a>
+          </div>
+
+          <div class="hero-tags">
+            <span>Narrativa</span>
+            <span>Educacional</span>
+            <span>Escolhas</span>
+            <span>2D</span>
+          </div>
+        </div>
+
+        <div class="hero-cover reveal">
+          <img src="../assets/capas/infantus.webp" alt="Capa do jogo Infantus">
+          <div class="cover-label">V1.1 DEMO</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>01 / SOBRE</span>
+          <h2>Você controla uma criança em um dia que exige <em>atenção.</em></h2>
+        </div>
+
+        <div class="intro-grid">
+          <article class="feature-card reveal">
+            <span class="feature-number">01</span>
+            <h3>Uma criança protagonista</h3>
+            <p>
+              A história acompanha uma criança em seu primeiro dia de aula.
+              O jogador conduz suas ações desde os primeiros momentos em casa
+              até o caminho para a escola.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-number">02</span>
+            <h3>Situações de risco</h3>
+            <p>
+              Ao longo do caminho surgem pessoas e acontecimentos que exigem
+              atenção, como abordagens de estranhos, ofertas e um carro suspeito.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-number">03</span>
+            <h3>Aprender escolhendo</h3>
+            <p>
+              Infantus transforma segurança em ação: o jogador precisa decidir
+              como reagir e recebe consequências diferentes para escolhas
+              corretas ou erradas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="jornada">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>02 / JORNADA</span>
+          <h2>Da rotina em casa até o <em>primeiro dia de aula.</em></h2>
+        </div>
+
+        <div class="journey-line">
+          <article class="journey-step reveal">
+            <b>01</b>
+            <span>QUARTO</span>
+            <h3>Acordar e começar</h3>
+            <p>
+              A rotina começa no quarto, com interações como acender a luz e levantar.
+            </p>
+          </article>
+
+          <article class="journey-step reveal">
+            <b>02</b>
+            <span>CASA</span>
+            <h3>Café e televisão</h3>
+            <p>
+              Antes de sair, a criança toma café e assiste ao jornal das 8.
+            </p>
+          </article>
+
+          <article class="journey-step reveal">
+            <b>03</b>
+            <span>RUA & BECO</span>
+            <h3>O mundo lá fora</h3>
+            <p>
+              No caminho aparecem novas situações, personagens e decisões.
+            </p>
+          </article>
+
+          <article class="journey-step reveal">
+            <b>04</b>
+            <span>ESCOLA</span>
+            <h3>Chegar em segurança</h3>
+            <p>
+              A progressão leva o jogador até a escola e seu interior.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section choices" id="escolhas">
+      <div class="container choices-grid">
+        <div class="choices-copy reveal">
+          <span class="section-kicker">03 / DECISÕES</span>
+          <h2>ACEITAR ou <em>REJEITAR?</em></h2>
+          <p>
+            O projeto usa escolhas diretas para colocar o jogador dentro da
+            situação. Existem estados separados para acerto e erro, feedback
+            visual e uma tela de fim de jogo quando uma decisão perigosa é tomada.
+          </p>
+
+          <div class="choice-example">
+            <span class="choice-bubble">?</span>
+            <p>
+              Um estranho oferece algo de graça. Você aceita ou recusa?
+            </p>
+          </div>
+        </div>
+
+        <div class="decision-ui reveal">
+          <div class="decision-top">
+            <span>SITUAÇÃO</span>
+            <b>ATENÇÃO</b>
+          </div>
+
+          <div class="decision-question">
+            <strong>O que você faria?</strong>
+            <small>Uma decisão simples pode mudar o resultado.</small>
+          </div>
+
+          <div class="decision-buttons">
+            <button type="button" class="reject">REJEITAR</button>
+            <button type="button" class="accept">ACEITAR</button>
+          </div>
+
+          <div class="decision-feedback">
+            <i></i>
+            <span>Escolhas seguras mantêm a jornada avançando.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journalist">
+      <div class="container journalist-grid">
+        <div class="news-card reveal">
+          <div class="news-top">
+            <span>JORNAL DAS 8</span>
+            <b>AO VIVO</b>
+          </div>
+
+          <div class="news-body">
+            <div class="news-avatar"></div>
+            <div>
+              <h3>Informação antes da ação.</h3>
+              <p>
+                A televisão e o jornalista fazem parte da narrativa e preparam
+                o jogador para reconhecer situações perigosas antes de sair de casa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="journalist-copy reveal">
+          <span class="section-kicker">04 / PREPARAÇÃO</span>
+          <h2>O jogo ensina antes de <em>testar.</em></h2>
+          <p>
+            Em vez de simplesmente mostrar uma resposta certa depois do erro,
+            Infantus apresenta contexto dentro da própria história. O jornal,
+            os diálogos e as interações ajudam a construir a ideia de
+            autopreservação antes das decisões mais importantes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section art" id="arte">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>05 / IDENTIDADE VISUAL</span>
+          <h2>Arte feita especialmente para o <em>Infantus.</em></h2>
+        </div>
+
+        <div class="art-panel reveal">
+          <div class="art-copy">
+            <span>ART DIRECTION</span>
+            <h3>Anny</h3>
+            <p>
+              Todas as artes do jogo foram feitas pela Anny: personagens,
+              cenários, elementos de interface e demais recursos visuais.
+            </p>
+          </div>
+
+          <div class="art-stats">
+            <div><strong>33</strong><span>sprites no projeto analisado</span></div>
+            <div><strong>2D</strong><span>arte ilustrada própria</span></div>
+            <div><strong>100%</strong><span>artes feitas por Anny</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>06 / EQUIPE</span>
+          <h2>Desenvolvido por <em>Gabriel & Anny.</em></h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="member reveal">
+            <span class="member-initial">G</span>
+            <div>
+              <h3>Gabriel</h3>
+              <p>Desenvolvimento</p>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <span class="member-initial">A</span>
+            <div>
+              <h3>Anny</h3>
+              <p>Desenvolvimento • Todas as artes</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section play" id="jogar">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>07 / JOGAR</span>
+          <h2>Veja até onde suas escolhas <em>levam.</em></h2>
+        </div>
+
+        <div class="scratch-window reveal">
+          <div class="window-bar">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <strong>INFANTUS • V1.1 DEMO</strong>
+            <span>SCRATCH</span>
+          </div>
+
+          <div class="scratch-frame">
+            <iframe
+              src="https://scratch.mit.edu/projects/1204385721/embed"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              title="Infantus no Scratch"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="play-footer reveal">
+          <p>Projeto original hospedado no Scratch.</p>
+          <a class="button primary" href="https://scratch.mit.edu/projects/1204385721" target="_blank" rel="noopener noreferrer">
+            Abrir projeto original ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a href="../index.html#jogos">← Voltar ao catálogo</a>
+      <span>Infantus • Gabriel & Anny</span>
+      <span>© <span id="currentYear"></span> Pixel Plays Place</span>
+    </div>
+  </footer>
+
+  <script src="infantus.js"></script>
+</body>
+</html>
