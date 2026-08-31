@@ -268,8 +268,7 @@ const jogos = [
       "assets/capas/hora-do-saber.webp",
 
     acaoDireta: true
-  }
-,
+  },
 
 
   // =========================================
