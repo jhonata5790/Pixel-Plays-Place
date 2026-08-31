@@ -222,8 +222,7 @@ const jogos = [
       "assets/capas/lummy-light-knowledge.jpg",
 
     acaoDireta: true
-  }
-,
+  },
 
 
   // =========================================
