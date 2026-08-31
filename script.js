@@ -307,10 +307,10 @@ const jogos = [
       "https://scratch.mit.edu/projects/1204385721",
 
     pagina:
-      "jogos/infantus.html?v=4",
+      "jogos/infantus.html?v=5",
 
     capa:
-      "assets/capas/infantus.png?v=4",
+      "assets/capas/infantus.png?v=5",
 
     acaoDireta: true
   }
