@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hora do Saber — jogo educacional em Scratch com perguntas por matéria e a companhia da coruja Owli.">
+  <title>Hora do Saber | Pixel Plays Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hora-do-saber.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="pixel-sky" id="pixelSky" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-content">
+      <a href="../index.html" class="brand">
+        <span class="brand-box">PP</span>
+        <span><strong>Pixel Plays Place</strong><small>Game Showcase</small></span>
+      </a>
+
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#owli">Owli</a>
+        <a href="#jogar">Jogar</a>
+      </nav>
+
+      <a class="scratch-button small" href="https://scratch.mit.edu/projects/1328218737" target="_blank" rel="noopener noreferrer">
+        Abrir Scratch ↗
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">QUIZ EDUCACIONAL • SCRATCH</div>
+          <h1>HORA DO <span>SABER</span></h1>
+          <p>
+            Responda perguntas de diferentes matérias, descubra sua pontuação
+            ao final de cada etapa e avance para o próximo desafio sempre
+            acompanhado pela Owli.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#jogar" class="scratch-button">▶ Jogar aqui</a>
+            <a href="#como-funciona" class="ghost-button">Ver como funciona</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>SCRATCH</span><i></i>
+            <span>QUIZ</span><i></i>
+            <span>EDUCACIONAL</span>
+          </div>
+        </div>
+
+        <div class="cover-frame reveal">
+          <img src="../assets/capas/hora-do-saber.webp" alt="Capa de Hora do Saber">
+          <span class="cover-corner tl"></span>
+          <span class="cover-corner tr"></span>
+          <span class="cover-corner bl"></span>
+          <span class="cover-corner br"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>01 / SOBRE</span>
+          <h2>Uma sequência de desafios para testar o que você <em>sabe.</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="library-card reveal">
+            <div class="book-stack" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
+            <h3>Matéria por matéria</h3>
+            <p>
+              A jornada é dividida em etapas. Em cada matéria, o jogador passa
+              por várias perguntas antes de chegar ao resultado daquela área.
+            </p>
+          </article>
+
+          <article class="library-card reveal">
+            <div class="score-orb" aria-hidden="true">★</div>
+            <h3>Pontuação ao final</h3>
+            <p>
+              Quando uma matéria termina, o jogo mostra a pontuação obtida
+              naquela etapa antes de liberar a próxima.
+            </p>
+          </article>
+
+          <article class="library-card reveal">
+            <div class="feather-icon" aria-hidden="true">✦</div>
+            <h3>Progresso contínuo</h3>
+            <p>
+              Depois do resultado, a aventura continua com uma nova matéria,
+              mantendo a sequência até completar os desafios.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>02 / COMO FUNCIONA</span>
+          <h2>Aprender, responder, conferir e <em>continuar.</em></h2>
+        </div>
+
+        <div class="flow-track">
+          <article class="flow-step reveal">
+            <b>01</b>
+            <span>MATÉRIA ATUAL</span>
+            <h3>Começa a rodada</h3>
+            <p>Uma nova matéria apresenta sua sequência de perguntas.</p>
+          </article>
+
+          <div class="flow-arrow">→</div>
+
+          <article class="flow-step reveal">
+            <b>02</b>
+            <span>PERGUNTAS</span>
+            <h3>Responda</h3>
+            <p>Avance questão por questão enquanto Owli acompanha a jornada.</p>
+          </article>
+
+          <div class="flow-arrow">→</div>
+
+          <article class="flow-step reveal">
+            <b>03</b>
+            <span>RESULTADO</span>
+            <h3>Veja sua pontuação</h3>
+            <p>No fim da matéria, o desempenho daquela etapa é revelado.</p>
+          </article>
+
+          <div class="flow-arrow">→</div>
+
+          <article class="flow-step reveal">
+            <b>04</b>
+            <span>PRÓXIMA ETAPA</span>
+            <h3>Continue</h3>
+            <p>O próximo conteúdo entra em cena e a sequência recomeça.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section owli-section" id="owli">
+      <div class="container owli-grid">
+        <div class="owli-portrait reveal">
+          <img src="../assets/capas/hora-do-saber.webp" alt="Owli, a coruja de Hora do Saber">
+        </div>
+
+        <div class="owli-copy reveal">
+          <span class="section-kicker">03 / SUA COMPANHEIRA</span>
+          <h2>Conheça a <em>Owli.</em></h2>
+          <p>
+            Owli é a coruja que acompanha o jogador durante todo o Hora do Saber.
+            Ela funciona como a presença constante da aventura: enquanto as
+            matérias e perguntas mudam, Owli continua ao seu lado.
+          </p>
+
+          <div class="owli-quote">
+            <span>?</span>
+            <p>Uma mascote feita para representar curiosidade, estudo e descoberta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section score-section">
+      <div class="container score-panel reveal">
+        <div>
+          <span>04 / RESULTADOS</span>
+          <h2>Cada matéria tem seu próprio <em>resultado.</em></h2>
+          <p>
+            A pontuação não aparece só no final de tudo. Cada etapa fecha com
+            seu próprio desempenho antes do jogador seguir em frente.
+          </p>
+        </div>
+
+        <div class="score-demo">
+          <div class="score-top"><span>RESULTADO DA MATÉRIA</span><b>★</b></div>
+          <strong class="score-number">?</strong>
+          <small>PONTOS</small>
+          <div class="score-bar"><i></i></div>
+          <button type="button">PRÓXIMA MATÉRIA →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section play-section" id="jogar">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span>05 / JOGAR</span>
+          <h2>A Hora do Saber começa <em>agora.</em></h2>
+        </div>
+
+        <div class="scratch-window reveal">
+          <div class="window-bar">
+            <div><i></i><i></i><i></i></div>
+            <strong>HORA_DO_SABER.SB3</strong>
+            <span>SCRATCH</span>
+          </div>
+
+          <div class="scratch-frame">
+            <iframe
+              src="https://scratch.mit.edu/projects/1328218737/embed"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+              title="Hora do Saber no Scratch"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="open-original reveal">
+          <p>Também dá para abrir o projeto diretamente no Scratch.</p>
+          <a href="https://scratch.mit.edu/projects/1328218737" target="_blank" rel="noopener noreferrer" class="scratch-button">
+            Abrir projeto original ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <a href="../index.html#jogos">← Voltar ao catálogo</a>
+      <span>Hora do Saber • Scratch</span>
+      <span>© <span id="currentYear"></span> Pixel Plays Place</span>
+    </div>
+  </footer>
+
+  <script src="hora-do-saber.js"></script>
+</body>
+</html>
