@@ -223,6 +223,52 @@ const jogos = [
 
     acaoDireta: true
   }
+,
+
+
+  // =========================================
+  // HORA DO SABER
+  // =========================================
+  {
+    id: "hora-do-saber",
+
+    nome: "Hora do Saber",
+
+    categoria: "outros",
+
+    categoriaNome: "Projeto Scratch",
+
+    tipo: "scratch",
+
+    plataforma: "Scratch",
+
+    engine: "Scratch",
+
+    genero: [
+      "Quiz",
+      "Educacional",
+      "Pixel Art"
+    ],
+
+    equipe: [],
+
+    metaSecundaria:
+      "Owli • mascote",
+
+    descricao:
+      "Um quiz educacional em que o jogador responde várias perguntas de cada matéria, recebe sua pontuação ao final da etapa e então avança para a próxima.",
+
+    link:
+      "https://scratch.mit.edu/projects/1328218737",
+
+    pagina:
+      "jogos/hora-do-saber.html",
+
+    capa:
+      "assets/capas/hora-do-saber.webp",
+
+    acaoDireta: true
+  }
 
 ];
 
@@ -309,6 +355,7 @@ function criarCard(jogo) {
   ===================================== */
 
   const equipeHTML =
+    jogo.metaSecundaria ||
     jogo.equipe.join(", ");
 
 
