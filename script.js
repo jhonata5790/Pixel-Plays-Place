@@ -219,7 +219,7 @@ const jogos = [
       "jogos/lummy.html",
 
     capa:
-      "assets/capas/lummy-light-knowledge.svg",
+      "assets/capas/lummy-light-knowledge.jpg",
 
     acaoDireta: true
   }
