@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10151b"/><stop offset=".55" stop-color="#17242a"/><stop offset="1" stop-color="#0b0e11"/></linearGradient>
+  <linearGradient id="haz" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd84e"/><stop offset="1" stop-color="#f08b19"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<g opacity=".16" stroke="#9cc0c7" fill="none">
+  <path d="M0 570h1280M0 480h1280M0 390h1280"/>
+  <path d="M120 180v430M260 160v450M430 210v400M850 180v430M1040 170v440"/>
+</g>
+<g fill="#263940" stroke="#66818a" stroke-width="3">
+  <rect x="720" y="235" width="420" height="295" rx="8"/>
+  <rect x="765" y="290" width="100" height="80"/><rect x="890" y="290" width="100" height="80"/><rect x="1015" y="290" width="80" height="80"/>
+  <rect x="815" y="410" width="110" height="120"/><rect x="955" y="410" width="110" height="120"/>
+</g>
+<g transform="translate(625 350)">
+  <circle r="90" fill="#11191d" stroke="#ffd84e" stroke-width="7"/>
+  <path d="M0-62 54 39h-108z" fill="url(#haz)" stroke="#ffe9a0" stroke-width="4"/>
+  <rect x="-7" y="-26" width="14" height="38" rx="5" fill="#161616"/>
+  <circle cy="27" r="8" fill="#161616"/>
+</g>
+<g transform="translate(1025 122)" filter="url(#glow)">
+  <path d="M0-55 48 32h-96z" fill="#ffd84e" stroke="#fff2a1" stroke-width="4"/>
+  <text x="0" y="18" text-anchor="middle" font-family="Arial Black" font-size="55" fill="#111">!</text>
+</g>
+<g transform="translate(250 395)">
+  <circle cx="0" cy="-115" r="45" fill="#d7dce0"/>
+  <path d="M-63-72h126l37 190h-200z" fill="#e7b52b"/>
+  <path d="M-55-58h110l-13 55h-84z" fill="#f5e7cf"/>
+  <rect x="-42" y="8" width="84" height="105" rx="8" fill="#23333a"/>
+  <rect x="-82" y="-53" width="24" height="165" rx="12" fill="#d7dce0" transform="rotate(12 -82 -53)"/>
+  <rect x="58" y="-53" width="24" height="165" rx="12" fill="#d7dce0" transform="rotate(-12 58 -53)"/>
+</g>
+<text x="70" y="125" fill="#f5f7f8" font-family="Arial Black,Impact,sans-serif" font-size="96" letter-spacing="3">RISK</text>
+<text x="70" y="215" fill="#ffd84e" font-family="Arial Black,Impact,sans-serif" font-size="96" letter-spacing="3">HUNTER</text>
+<text x="74" y="262" fill="#9bb0b6" font-family="Arial,sans-serif" font-size="23" letter-spacing="5">IDENTIFIQUE • ANALISE • RESOLVA</text>
+<rect x="70" y="600" width="1140" height="2" fill="#40535a"/>
+<text x="74" y="653" fill="#dce6e8" font-family="Arial,sans-serif" font-size="24">BRENO • UNITY • WINDOWS • SEGURANÇA DO TRABALHO</text>
+</svg>
