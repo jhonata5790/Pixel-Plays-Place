@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+<defs>
+<radialGradient id="bg"><stop stop-color="#17245d"/><stop offset=".55" stop-color="#090d26"/><stop offset="1" stop-color="#03040d"/></radialGradient>
+<linearGradient id="ship" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f13b4d"/><stop offset="1" stop-color="#7b0c20"/></linearGradient>
+<linearGradient id="crystal"><stop stop-color="#9ffcff"/><stop offset=".5" stop-color="#39d8ff"/><stop offset="1" stop-color="#6458ff"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<g fill="#fff" opacity=".8">
+<circle cx="90" cy="90" r="2"/><circle cx="180" cy="160" r="3"/><circle cx="350" cy="75" r="2"/><circle cx="470" cy="190" r="2"/><circle cx="620" cy="85" r="3"/><circle cx="760" cy="165" r="2"/><circle cx="930" cy="70" r="2"/><circle cx="1100" cy="140" r="3"/><circle cx="1180" cy="55" r="2"/>
+<circle cx="105" cy="530" r="2"/><circle cx="260" cy="610" r="3"/><circle cx="430" cy="520" r="2"/><circle cx="760" cy="590" r="2"/><circle cx="990" cy="520" r="3"/><circle cx="1160" cy="610" r="2"/>
+</g>
+<g opacity=".7">
+<circle cx="1040" cy="265" r="108" fill="#7a4d35"/>
+<circle cx="1000" cy="230" r="22" fill="#4f2f27"/><circle cx="1080" cy="300" r="30" fill="#4f2f27"/><circle cx="1035" cy="325" r="14" fill="#4f2f27"/>
+</g>
+<g transform="translate(655 360)">
+<path d="M0-125 82 55 26 39 0 85-26 39-82 55z" fill="url(#ship)" stroke="#ff8794" stroke-width="5"/>
+<ellipse cx="0" cy="-20" rx="30" ry="48" fill="#9cecff" stroke="#d9ffff" stroke-width="5"/>
+<path d="M-27 54 0 120 27 54z" fill="#ffaf2a" filter="url(#glow)"/>
+</g>
+<g filter="url(#glow)">
+<path d="M250 355 292 298 335 355 292 418z" fill="url(#crystal)"/>
+<path d="M870 430 905 382 942 430 905 486z" fill="url(#crystal)"/>
+<path d="M1030 510 1058 470 1088 510 1058 552z" fill="url(#crystal)"/>
+</g>
+<g fill="#5d514d">
+<circle cx="420" cy="435" r="55"/><circle cx="390" cy="410" r="13" fill="#352d2a"/><circle cx="448" cy="450" r="17" fill="#352d2a"/>
+<circle cx="835" cy="250" r="38"/><circle cx="823" cy="239" r="8" fill="#352d2a"/>
+</g>
+<text x="70" y="120" fill="#f4f7ff" font-family="Arial Black,Impact,sans-serif" font-size="88" letter-spacing="2">SPACIAL</text>
+<text x="70" y="205" fill="#64ddff" font-family="Arial Black,Impact,sans-serif" font-size="88" letter-spacing="2">TIMMIG</text>
+<text x="73" y="250" fill="#a9b2d3" font-family="Arial,sans-serif" font-size="24" letter-spacing="5">CRISTAIS • METEOROS • VERSUS</text>
+<text x="73" y="658" fill="#dbe6ff" font-family="Arial,sans-serif" font-size="24">BRENO • UNITY • WINDOWS</text>
+</svg>
