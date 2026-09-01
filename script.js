@@ -99,9 +99,9 @@ const jogos = [
 
     nome: "Luzes na Pele",
 
-    categoria: "individual",
+    categoria: "grupo",
 
-    categoriaNome: "Projeto individual",
+    categoriaNome: "Projeto em grupo",
 
     tipo: "scratch",
 
@@ -388,7 +388,8 @@ const jogos = [
     ],
 
     equipe: [
-      "Breno"
+      "Breno",
+      "Erick"
     ],
 
     descricao:
