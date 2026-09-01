@@ -2,169 +2,149 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pixel Not Found — projeto em Scratch desenvolvido por Caio Augusto.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Pixel Not Found — plataforma 2D em Scratch criado por Caio Augusto, com sete cenários, coleta de pixels e batalha contra Burn.">
   <title>Pixel Not Found | Pixel Plays Place</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="pixel-not-found.css">
 </head>
 <body>
-
 <div class="scanlines"></div>
-<div class="scroll-progress" id="scrollProgress"></div>
+<div class="progress" id="progress"></div>
 
 <header class="topbar">
-  <div class="container topbar-content">
-    <a href="../index.html" class="brand">
-      <span class="brand-box">PP</span>
-      <span>Pixel Plays Place</span>
-    </a>
-
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#jogar">Jogar</a>
-      <a href="#visual">Visual</a>
-      <a href="#criador">Criador</a>
-    </nav>
-
-    <a class="scratch-small" href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer">
-      Scratch ↗
-    </a>
+  <div class="container navwrap">
+    <a href="../index.html" class="brand"><b>PP</b><span><strong>PIXEL PLAYS PLACE</strong><small>GAME SHOWCASE</small></span></a>
+    <nav><a href="#gameplay">Gameplay</a><a href="#pixels">Pixels</a><a href="#burn">Burn</a><a href="#jogar">Jogar</a></nav>
+    <a class="scratch" href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer">Scratch ↗</a>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="inicio">
-    <div class="glitch-bg" aria-hidden="true">
-      <span style="--x:7%;--y:19%;--r:-16deg">Error</span>
-      <span style="--x:68%;--y:23%;--r:18deg">Error</span>
-      <span style="--x:15%;--y:57%;--r:-8deg">error</span>
-      <span style="--x:70%;--y:62%;--r:11deg">Burn</span>
-      <span style="--x:4%;--y:83%;--r:3deg">Error</span>
+<section class="hero">
+  <div class="glitch-word g1">ERROR</div><div class="glitch-word g2">404</div><div class="glitch-word g3">NOT FOUND</div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="status">[ SYSTEM://PIXEL_NOT_FOUND ]</span>
+      <h1>PIXEL<br><em>NOT FOUND</em></h1>
+      <p>Um plataforma 2D em que você atravessa cenários completamente diferentes, coleta sete “pixels”, supera obstáculos e termina a jornada enfrentando Burn.</p>
+      <div class="actions">
+        <a class="btn primary" href="#jogar">▶ JOGAR AQUI</a>
+        <a class="btn ghost" href="#gameplay">VER O JOGO</a>
+      </div>
+      <div class="meta"><span><b>7</b>Pixels</span><i></i><span><b>A / D</b>Movimento</span><i></i><span><b>SPACE</b>Pulo</span></div>
     </div>
 
-    <div class="container hero-grid">
-      <div class="hero-copy reveal">
-        <p class="status">[ ERROR 404: PIXEL FOUND ]</p>
-        <h1>
-          <span>PIXEL</span>
-          <span class="green">NOT FOUND</span>
-        </h1>
-        <p class="lead">
-          Uma experiência 2D criada no Scratch com estética de falha digital,
-          mensagens de erro e uma identidade visual dominada por preto e verde.
-        </p>
+    <div class="start-screen reveal">
+      <img src="https://assets.scratch.mit.edu/internalapi/asset/d5adc88aa3b0f662c49267019733e636.svg/get/" alt="Tela inicial real de Pixel Not Found">
+      <div class="player-float blue"><img src="https://assets.scratch.mit.edu/internalapi/asset/bad8eb50840449895d81548e903171c7.svg/get/" alt=""></div>
+      <div class="player-float red"><img src="https://assets.scratch.mit.edu/internalapi/asset/ac96e1e365357a0753e0cf94af089fae.svg/get/" alt=""></div>
+    </div>
+  </div>
+</section>
 
-        <div class="hero-actions">
-          <a href="#jogar" class="pixel-button primary">▶ JOGAR AQUI</a>
-          <a href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer" class="pixel-button secondary">ABRIR NO SCRATCH ↗</a>
-        </div>
+<section class="section" id="gameplay">
+  <div class="container">
+    <header class="head reveal"><span>01 // GAMEPLAY</span><h2>Plataforma, impulso e <em>wall jump.</em></h2></header>
+    <div class="controls">
+      <article class="control reveal"><kbd>A</kbd><h3>Esquerda</h3><p>Acelera o bloco azul para a esquerda.</p></article>
+      <article class="control reveal"><kbd>D</kbd><h3>Direita</h3><p>Acelera o bloco azul para a direita.</p></article>
+      <article class="control reveal"><kbd>SPACE</kbd><h3>Pular</h3><p>Pule no chão e também use paredes para mudar de direção no ar.</p></article>
+    </div>
+    <div class="gameplay-note reveal"><b>↗</b><p>O movimento usa velocidade e desaceleração, em vez de simplesmente mover uma quantidade fixa de pixels. Isso deixa a travessia com mais impulso.</p></div>
+  </div>
+</section>
 
-        <div class="hero-meta">
-          <span>SCRATCH</span>
-          <i></i>
-          <span>2D</span>
-          <i></i>
-          <span>CAIO AUGUSTO</span>
-        </div>
-      </div>
+<section class="section worlds dark">
+  <div class="container">
+    <header class="head reveal"><span>02 // 7 CENÁRIOS</span><h2>Cada tela muda o <em>mundo.</em></h2></header>
+    <div class="world-grid">
+      <figure class="world reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/8f6b5c5bc6cdc071fd68c6a5dd7170a5.svg/get/" alt="Cenário de cidade e lago"><figcaption>CIDADE / LAGO</figcaption></figure>
+      <figure class="world reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/190c45c56a2c46c13a6a9597e8f32b32.svg/get/" alt="Cenário noturno"><figcaption>NOITE / FLORESTA</figcaption></figure>
+      <figure class="world reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/6089641a907e5bfcb0b00ca0db6442fc.svg/get/" alt="Cenário de caverna"><figcaption>CAVERNA</figcaption></figure>
+      <figure class="world reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/2bd3fee9ace38bfdeef72e4c6c5780a1.svg/get/" alt="Cenário de cidade dourada"><figcaption>CIDADE DOURADA</figcaption></figure>
+    </div>
+    <p class="world-copy reveal">O projeto troca de fundo conforme o jogador progride: começa simples, passa por paisagens pixeladas, cavernas e cidades e chega até uma fase final antes do chefe.</p>
+  </div>
+</section>
 
-      <div class="hero-art reveal">
-        <img src="../assets/capas/pixel-not-found.svg" alt="Capa de Pixel Not Found">
+<section class="section pixels" id="pixels">
+  <div class="container">
+    <header class="head reveal"><span>03 // COLETA</span><h2>Sete “pixels”. Sete formas <em>diferentes.</em></h2></header>
+    <div class="pixel-row">
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/d95d2212798b2258026a910f19df5253.svg/get/" alt=""><span>PIXEL 01</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/5a76ec48e0d68281cf19114decba0e54.svg/get/" alt=""><span>PIXEL 02</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/daa31ebc000477b046bb2cb8e428a5b5.svg/get/" alt=""><span>PIXEL 03</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/29b58227702adbcab3dce5a99b7381fa.svg/get/" alt=""><span>PIXEL 04</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/b4a324d07b310eb13452e0442effe8eb.svg/get/" alt=""><span>PIXEL 05</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/cd5837307a5744584a6736af6cd4e446.svg/get/" alt=""><span>PIXEL 06</span></div>
+      <div class="collectible reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/664061806d540a50504810818b1e7f80.svg/get/" alt=""><span>PIXEL 07</span></div>
+    </div>
+    <p class="pixel-copy reveal">Apesar do nome “pixel”, os colecionáveis aparecem como objetos diferentes: estrela, teclado, pergaminho, picareta, capacete, coroa e uma joia azul.</p>
+  </div>
+</section>
+
+<section class="section dual dark">
+  <div class="container dual-grid">
+    <div class="dual-copy reveal">
+      <span class="status">04 // FASE 07</span>
+      <h2>Uma segunda peça entra no <em>tabuleiro.</em></h2>
+      <p>Na sétima fase aparece um segundo personagem, o bloco vermelho. Ele possui controles próprios pelas setas, enquanto a fase também adiciona inimigos patrulhando, uma chave e uma porta.</p>
+      <div class="keyline"><img src="https://assets.scratch.mit.edu/internalapi/asset/2b3fb505bb59955d6d56fcad24cb4570.svg/get/" alt=""><span>PEGUE A CHAVE → ABRA A PORTA</span></div>
+    </div>
+    <div class="dual-screen reveal">
+      <img src="https://assets.scratch.mit.edu/internalapi/asset/4e5d83b1f82a7c4f32ffca62c57c6874.svg/get/" alt="Sétimo cenário de Pixel Not Found">
+      <img class="p-blue" src="https://assets.scratch.mit.edu/internalapi/asset/bad8eb50840449895d81548e903171c7.svg/get/" alt="Bloco azul">
+      <img class="p-red" src="https://assets.scratch.mit.edu/internalapi/asset/ac96e1e365357a0753e0cf94af089fae.svg/get/" alt="Bloco vermelho">
+    </div>
+  </div>
+</section>
+
+<section class="section boss" id="burn">
+  <div class="container">
+    <header class="head reveal"><span>05 // BOSS FIGHT</span><h2>O erro ganha um nome: <em>Burn.</em></h2></header>
+    <div class="boss-grid">
+      <div class="boss-screen reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/ed2d13a82504dc2f6361f26aaaec4605.svg/get/" alt="Tela da batalha contra Burn"><img class="burn-sprite" src="https://assets.scratch.mit.edu/internalapi/asset/3d5617790b07a9e81a73dd316f22bae9.svg/get/" alt="Burn"></div>
+      <div class="boss-copy reveal">
+        <h3>Chefe final</h3>
+        <p>Coletar o sétimo pixel dispara a transição para a batalha contra Burn. A arena usa plataformas, ataques temporizados, avisos de raio e uma barra de vida com múltiplos estados.</p>
+        <div class="boss-tags"><span>⚡ Raios</span><span>● Ataques</span><span>▰ HP</span><span>▱ Plataformas</span></div>
+        <p>Quando Burn cai, o caminho para a última joia é liberado.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="play-section" id="jogar">
-    <div class="container">
-      <div class="section-head reveal">
-        <span>01 // EXECUTAR</span>
-        <h2>O sistema ainda <em>responde.</em></h2>
-      </div>
+<section class="section ending dark">
+  <div class="container ending-grid">
+    <div class="ending-copy reveal"><span class="status">06 // FINAL</span><h2>A Joia da <em>Paz.</em></h2><p>Depois da boss fight, a joia aparece. Ao coletá-la, o jogo encerra com a mensagem: “Você coletou a joia da paz”.</p></div>
+    <div class="ending-screen reveal"><img src="https://assets.scratch.mit.edu/internalapi/asset/81f2378c8f274f62c2bce84f8382c2e0.svg/get/" alt="Tela final de Pixel Not Found"><img class="final-gem" src="https://assets.scratch.mit.edu/internalapi/asset/664061806d540a50504810818b1e7f80.svg/get/" alt=""></div>
+  </div>
+</section>
 
-      <div class="game-terminal reveal">
-        <div class="terminal-bar">
-          <div class="terminal-lights"><span></span><span></span><span></span></div>
-          <strong>pixel-not-found.exe</strong>
-          <span>ONLINE</span>
-        </div>
-
-        <div class="scratch-frame">
-          <iframe
-            src="https://scratch.mit.edu/projects/1181292053/embed"
-            allowtransparency="true"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            title="Pixel Not Found no Scratch"
-          ></iframe>
-        </div>
-      </div>
+<section class="section play" id="jogar">
+  <div class="container">
+    <header class="head reveal"><span>07 // EXECUTAR</span><h2>PIXEL NOT FOUND está <em>online.</em></h2></header>
+    <div class="terminal reveal">
+      <div class="terminal-top"><span>pixel-not-found.sb3</span><b>SCRATCH // ONLINE</b></div>
+      <iframe src="https://scratch.mit.edu/projects/1181292053/embed?autostart=false" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen title="Pixel Not Found no Scratch"></iframe>
+      <div class="terminal-bottom"><span>Projeto criado por Caio Augusto</span><a href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer">Abrir no Scratch ↗</a></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="visual-section" id="visual">
-    <div class="container visual-grid">
-      <div class="section-head reveal">
-        <span>02 // IDENTIDADE</span>
-        <h2>Erro virou <em>linguagem visual.</em></h2>
-      </div>
-
-      <div class="visual-cards">
-        <article class="visual-card reveal">
-          <span class="code">#00FF41</span>
-          <h3>Verde de sistema</h3>
-          <p>Textos, bordas e elementos visuais remetem a terminais e mensagens de falha.</p>
-        </article>
-
-        <article class="visual-card reveal">
-          <span class="code">ERROR()</span>
-          <h3>Glitch e repetição</h3>
-          <p>Palavras quebradas e erros espalhados pelo cenário fazem parte da identidade do jogo.</p>
-        </article>
-
-        <article class="visual-card reveal">
-          <span class="code">8-BIT</span>
-          <h3>Pixel art</h3>
-          <p>Formas quadradas e elementos simples reforçam o visual digital e experimental.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="creator-section" id="criador">
-    <div class="container creator-card reveal">
-      <div>
-        <span class="creator-label">03 // DESENVOLVIMENTO</span>
-        <h2>Caio Augusto</h2>
-        <p>Desenvolvedor de Pixel Not Found.</p>
-      </div>
-
-      <div class="creator-avatar">CA</div>
-    </div>
-  </section>
-
-  <section class="final-section">
-    <div class="container final-card reveal">
-      <p>&gt; RUN PROJECT_1181292053</p>
-      <h2>PIXEL NOT FOUND</h2>
-      <a href="https://scratch.mit.edu/projects/1181292053" target="_blank" rel="noopener noreferrer" class="pixel-button primary">
-        ABRIR PROJETO NO SCRATCH ↗
-      </a>
-    </div>
-  </section>
+<section class="section creator dark">
+  <div class="container creator-card reveal">
+    <div class="avatar">CA</div>
+    <div><span class="status">08 // DESENVOLVIMENTO</span><h2>Caio Augusto</h2><p>Desenvolvedor de Pixel Not Found.</p></div>
+    <a class="btn ghost" href="../index.html#jogos">← CATÁLOGO</a>
+  </div>
+</section>
 </main>
 
-<footer>
-  <div class="container footer-content">
-    <a href="../index.html#jogos">← Voltar ao catálogo</a>
-    <span>Pixel Not Found • Caio Augusto</span>
-    <span>© <span id="currentYear"></span> Pixel Plays Place</span>
-  </div>
-</footer>
-
+<footer><div class="container foot"><span>Pixel Not Found • Caio Augusto</span><span>© <span id="year"></span> Pixel Plays Place</span></div></footer>
 <script src="pixel-not-found.js"></script>
 </body>
 </html>
