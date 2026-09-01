@@ -371,9 +371,9 @@ const jogos = [
 
     nome: "Resgate Ninja",
 
-    categoria: "individual",
+    categoria: "grupo",
 
-    categoriaNome: "Projeto individual",
+    categoriaNome: "Projeto em grupo",
 
     tipo: "scratch",
 
