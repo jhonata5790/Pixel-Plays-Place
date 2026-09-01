@@ -447,6 +447,49 @@ const jogos = [
       "assets/capas/spacial-timmig.svg",
 
     acaoDireta: false
+  },
+
+  // =========================================
+  // RISK HUNTER
+  // =========================================
+  {
+    id: "risk-hunter",
+
+    nome: "Risk Hunter",
+
+    categoria: "individual",
+
+    categoriaNome: "Projeto individual",
+
+    tipo: "download",
+
+    plataforma: "Windows",
+
+    engine: "Unity",
+
+    genero: [
+      "Educacional",
+      "Primeira Pessoa",
+      "3D"
+    ],
+
+    equipe: [
+      "Breno"
+    ],
+
+    descricao:
+      "Um jogo 3D em primeira pessoa sobre segurança do trabalho em que o jogador explora o Senac Taguatinga, identifica riscos e resolve quizzes para concluir a inspeção.",
+
+    link:
+      "https://drive.google.com/uc?export=download&id=1Uo8ISX-dGPT79CxuhUvyoJepsbdx8Wtm",
+
+    pagina:
+      "jogos/risk-hunter.html",
+
+    capa:
+      "assets/capas/risk-hunter.svg",
+
+    acaoDireta: false
   }
 
 ];
