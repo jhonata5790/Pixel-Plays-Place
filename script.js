@@ -314,6 +314,52 @@ const jogos = [
 
     acaoDireta: true
   }
+,
+
+
+  // =========================================
+  // SAMURAI
+  // =========================================
+  {
+    id: "samurai",
+
+    nome: "Samurai",
+
+    categoria: "grupo",
+
+    categoriaNome: "Projeto em grupo",
+
+    tipo: "download",
+
+    plataforma: "Windows",
+
+    engine: "Unity",
+
+    genero: [
+      "Ação",
+      "2D",
+      "Samurai"
+    ],
+
+    equipe: [
+      "Pedro Gabriel",
+      "Pedro Vidal"
+    ],
+
+    descricao:
+      "Um jogo 2D de ação em que um samurai enfrenta inimigos com ataques corpo a corpo e à distância, usa curas limitadas, descansa em fogueiras e avança por duas fases.",
+
+    link:
+      "https://drive.google.com/uc?export=download&id=1hLAW4RVn3sHVYj-ZDlaS-ZUq9aLFWWMo",
+
+    pagina:
+      "jogos/samurai.html",
+
+    capa:
+      "assets/capas/samurai.svg",
+
+    acaoDireta: false
+  }
 
 ];
 
