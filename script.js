@@ -155,9 +155,9 @@ const jogos = [
     engine: "Scratch",
 
     genero: [
-      "Pixel Art",
-      "2D",
-      "Scratch"
+      "Plataforma",
+      "Ação",
+      "Pixel Art"
     ],
 
     equipe: [
@@ -165,7 +165,7 @@ const jogos = [
     ],
 
     descricao:
-      "Uma experiência 2D criada no Scratch com estética de erro digital, mensagens de falha e uma identidade visual marcada por preto e verde.",
+      "Um plataforma 2D em Scratch com sete cenários, wall jump, coleta de pixels, chave e porta, obstáculos e uma batalha final contra Burn.",
 
     link:
       "https://scratch.mit.edu/projects/1181292053",
@@ -174,7 +174,7 @@ const jogos = [
       "jogos/pixel-not-found.html",
 
     capa:
-      "assets/capas/pixel-not-found.svg",
+      "https://assets.scratch.mit.edu/internalapi/asset/d5adc88aa3b0f662c49267019733e636.svg/get/",
 
     acaoDireta: true
   },
