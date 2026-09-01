@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080808"/>
+      <stop offset=".55" stop-color="#17100d"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7d0b0b"/>
+      <stop offset=".5" stop-color="#df2d1f"/>
+      <stop offset="1" stop-color="#6b0808"/>
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop stop-color="#f6d5a1"/>
+      <stop offset="1" stop-color="#c53522"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="915" cy="265" r="175" fill="url(#sun)" opacity=".95"/>
+  <path d="M0 520 250 330 390 450 565 275 760 470 950 350 1280 535V720H0Z" fill="#0c0c0c"/>
+  <path d="M0 565 210 455 410 545 610 430 820 555 1010 455 1280 580V720H0Z" fill="#15100e"/>
+  <g opacity=".9">
+    <rect x="145" y="230" width="26" height="310" fill="#250b08"/>
+    <rect x="328" y="230" width="26" height="310" fill="#250b08"/>
+    <rect x="112" y="215" width="275" height="30" rx="4" fill="#4f120e"/>
+    <rect x="85" y="180" width="328" height="28" rx="4" fill="#6c1712"/>
+    <path d="M118 180 85 150h328l-33 30z" fill="#8b2118"/>
+  </g>
+  <g transform="translate(660 250)">
+    <path d="M-80 270c10-105 22-215 55-267 28-43 74-47 102 1 32 55 45 168 54 266z" fill="#090909"/>
+    <circle cx="25" cy="-13" r="42" fill="#090909"/>
+    <path d="M-8-45c45-28 92-8 102 20-32-8-67-3-101 16z" fill="#090909"/>
+    <path d="M-12 40c-65 100-98 172-116 253h36c26-82 57-143 118-225z" fill="#151515"/>
+    <rect x="-85" y="170" width="250" height="15" rx="7" transform="rotate(-43)" fill="#d7c5a8"/>
+    <rect x="112" y="-16" width="23" height="350" rx="10" transform="rotate(47)" fill="#1d1d1d"/>
+    <rect x="99" y="-32" width="14" height="380" rx="7" transform="rotate(47)" fill="#e8e0d0"/>
+  </g>
+  <rect x="0" y="610" width="1280" height="110" fill="rgba(0,0,0,.55)"/>
+  <text x="70" y="585" fill="#f3eadc" font-family="Arial Black,Impact,sans-serif" font-size="132" letter-spacing="10">SAMURAI</text>
+  <rect x="73" y="610" width="510" height="8" fill="url(#red)"/>
+  <text x="76" y="660" fill="#c5b8a8" font-family="Arial,sans-serif" font-size="26" letter-spacing="4">PEDRO GABRIEL • PEDRO VIDAL</text>
+</svg>
