@@ -99,9 +99,9 @@ const jogos = [
 
     nome: "Luzes na Pele",
 
-    categoria: "grupo",
+    categoria: "individual",
 
-    categoriaNome: "Projeto em grupo",
+    categoriaNome: "Projeto individual",
 
     tipo: "scratch",
 
@@ -110,9 +110,9 @@ const jogos = [
     engine: "Scratch",
 
     genero: [
-      "Pixel Art",
-      "2D",
-      "Scratch"
+      "Educacional",
+      "Narrativa",
+      "Quiz"
     ],
 
     equipe: [
