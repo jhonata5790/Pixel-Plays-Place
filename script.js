@@ -120,7 +120,7 @@ const jogos = [
     ],
 
     descricao:
-      "Um projeto em pixel art criado no Scratch, com identidade visual marcada por tons terrosos, luzes recortadas e formas pixeladas.",
+      "Uma experiência educativa em Scratch sobre vitiligo, convivência e respeito às diferenças, com exploração lateral, diálogos e um quiz final de três perguntas.",
 
     link:
       "https://scratch.mit.edu/projects/1204124581",
