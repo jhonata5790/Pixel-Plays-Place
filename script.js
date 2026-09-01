@@ -360,6 +360,48 @@ const jogos = [
 
     acaoDireta: false
   }
+,
+
+
+  // =========================================
+  // RESGATE NINJA
+  // =========================================
+  {
+    id: "resgate-ninja",
+
+    nome: "Resgate Ninja",
+
+    categoria: "individual",
+
+    categoriaNome: "Projeto individual",
+
+    tipo: "scratch",
+
+    plataforma: "Scratch",
+
+    engine: "Scratch",
+
+    genero: [
+      "Educacional",
+      "Furtividade",
+      "Coleta"
+    ],
+
+    equipe: [
+      "Breno"
+    ],
+
+    descricao:
+      "Um jogo educativo em que um ninja precisa evitar inimigos de fast-food, se esconder pelo cenário e coletar frutas até recuperar uma receita secreta saudável.",
+
+    pagina:
+      "jogos/resgate-ninja.html",
+
+    capa:
+      "assets/resgate-ninja/fundo.svg",
+
+    acaoDireta: false
+  }
 
 ];
 
