@@ -402,6 +402,51 @@ const jogos = [
 
     acaoDireta: false
   }
+,
+
+
+  // =========================================
+  // SPACIAL TIMMIG
+  // =========================================
+  {
+    id: "spacial-timmig",
+
+    nome: "Spacial Timmig",
+
+    categoria: "individual",
+
+    categoriaNome: "Projeto individual",
+
+    tipo: "download",
+
+    plataforma: "Windows",
+
+    engine: "Unity",
+
+    genero: [
+      "Arcade",
+      "Espacial",
+      "2D"
+    ],
+
+    equipe: [
+      "Breno"
+    ],
+
+    descricao:
+      "Um jogo espacial de precisão em que a nave gira continuamente, o jogador acelera no momento certo, desvia de meteoros e coleta cristais antes do tempo acabar.",
+
+    link:
+      "https://drive.google.com/uc?export=download&id=1oPEN2W-Bvt_1wya4nmr6-zaxLTyXg0_K",
+
+    pagina:
+      "jogos/spacial-timmig.html",
+
+    capa:
+      "assets/capas/spacial-timmig.svg",
+
+    acaoDireta: false
+  }
 
 ];
 
