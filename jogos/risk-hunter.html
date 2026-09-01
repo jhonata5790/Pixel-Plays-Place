@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Risk Hunter — jogo 3D de segurança do trabalho em Unity, desenvolvido por Breno.">
+<title>Risk Hunter | Pixel Plays Place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="risk-hunter.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="../index.html"><b>PP</b><span><strong>PIXEL PLAYS PLACE</strong><small>GAME SHOWCASE</small></span></a>
+    <nav><a href="#missao">Missão</a><a href="#riscos">Riscos</a><a href="#controles">Controles</a><a href="#download">Download</a></nav>
+    <a class="mini" href="#download">Baixar ↓</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="copy reveal">
+      <span class="eyebrow">UNITY • WINDOWS • PRIMEIRA PESSOA • EDUCATIVO</span>
+      <h1>RISK<br><em>HUNTER</em></h1>
+      <p>Você é um técnico em segurança do trabalho contratado pelo Senac Taguatinga. Sua missão é explorar o ambiente, localizar situações de risco e responder corretamente como cada uma deve ser classificada ou resolvida.</p>
+      <div class="actions"><a class="btn primary" href="#download">↓ Baixar para Windows</a><a class="btn ghost" href="#missao">Conhecer o jogo</a></div>
+      <div class="facts"><span><b>3D</b>Primeira pessoa</span><i></i><span><b>6</b>Riscos configurados</span><i></i><span><b>Breno</b>Desenvolvedor</span></div>
+    </div>
+    <div class="cover reveal"><img src="../assets/capas/risk-hunter.svg" alt="Capa de Risk Hunter"></div>
+  </div>
+</section>
+
+<section class="section" id="missao">
+  <div class="container">
+    <header class="head reveal"><span>01 / MISSÃO</span><h2>Caçar riscos antes que eles virem <em>acidentes.</em></h2></header>
+    <div class="mission-grid">
+      <article class="mission reveal"><b>!</b><h3>Encontre</h3><p>Os pontos de risco possuem uma exclamação no ambiente para ajudar o jogador a identificá-los.</p></article>
+      <article class="mission reveal"><b>?</b><h3>Analise</h3><p>Ao interagir, o jogo abre perguntas sobre o tipo de risco e sobre a melhor forma de resolver a situação.</p></article>
+      <article class="mission reveal"><b>✓</b><h3>Conclua</h3><p>Respostas corretas completam o risco, aumentam a pontuação e aproximam o jogador da vitória.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="riscos">
+  <div class="container">
+    <header class="head reveal"><span>02 / SITUAÇÕES</span><h2>O build traz riscos espalhados pela <em>cozinha e floricultura.</em></h2></header>
+    <div class="risk-grid">
+      <article class="risk reveal"><span>COZINHA</span><h3>Faca</h3><p>O jogador precisa reconhecer o tipo de risco e escolher uma ação para evitar a situação.</p></article>
+      <article class="risk reveal"><span>COZINHA</span><h3>Batedeira</h3><p>O quiz também trabalha riscos físicos ligados ao equipamento, com alternativas como vibração, calor e umidade.</p></article>
+      <article class="risk reveal"><span>COZINHA</span><h3>Fogão</h3><p>Outro ponto pede a identificação do risco do objeto e testa a leitura da situação.</p></article>
+      <article class="risk reveal"><span>COZINHA</span><h3>Sujeira</h3><p>O jogador avalia possíveis consequências, incluindo contaminação, e precisa responder corretamente.</p></article>
+      <article class="risk reveal"><span>FLORICULTURA</span><h3>Vaso quebrado</h3><p>A situação exige reconhecer o risco e escolher uma resposta adequada entre opções de intervenção.</p></article>
+      <article class="risk reveal"><span>FLORICULTURA</span><h3>Piso molhado</h3><p>Uma situação clássica de acidente: o quiz pede a classificação e a melhor forma de corrigir o problema.</p></article>
+    </div>
+    <div class="types reveal"><strong>TIPOS PRESENTES NOS QUIZZES</strong><span>Risco de acidente</span><span>Risco físico</span><span>Risco químico</span><span>Risco biológico</span></div>
+  </div>
+</section>
+
+<section class="section" id="controles">
+  <div class="container">
+    <header class="head reveal"><span>03 / CONTROLES</span><h2>Explore o Senac em <em>primeira pessoa.</em></h2></header>
+    <div class="controls">
+      <article class="control reveal"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><h3>Movimento</h3><p>Ande para frente, trás e para os lados.</p></article>
+      <article class="control reveal"><kbd>SPACE</kbd><h3>Pular</h3><p>A tecla espaço é usada para pular.</p></article>
+      <article class="control reveal"><kbd>CTRL</kbd><h3>Agachar</h3><p>Control reduz a altura do personagem para agachar.</p></article>
+      <article class="control reveal"><kbd>🖱</kbd><h3>Câmera</h3><p>Mova o mouse para olhar ao redor e use a roda para ajustar o zoom.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container split">
+    <div class="reveal"><span class="eyebrow">04 / AMBIENTE</span><h2>Um campus inteiro para <em>inspecionar.</em></h2><p>O mapa do build inclui áreas identificadas como cozinha, floricultura, biblioteca, laboratórios, salas de aula, banheiros, administração, armazém, salão de beleza e entrada do Senac.</p><p>A proposta transforma o espaço em um exercício de observação: andar pelo cenário, reconhecer o que pode causar problema e validar a análise por meio do quiz.</p></div>
+    <div class="map-card reveal">
+      <span>INSPEÇÃO ATIVA</span>
+      <div class="radar"><i></i><i></i><i></i><b>!</b></div>
+      <small>LOCALIZE OS INDICADORES DE RISCO</small>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <header class="head reveal"><span>05 / CRIAÇÃO</span><h2>Desenvolvido por <em>Breno.</em></h2></header>
+    <article class="creator reveal"><b>B</b><div><h3>Breno</h3><p>Desenvolvimento do Risk Hunter</p></div></article>
+  </div>
+</section>
+
+<section class="section dark" id="download">
+  <div class="container download reveal">
+    <span class="eyebrow">06 / DOWNLOAD</span>
+    <h2>Comece sua <em>inspeção.</em></h2>
+    <p>Build para Windows. Baixe o ZIP, extraia a pasta e execute <strong>Risk Hunter.exe</strong>.</p>
+    <div class="meta"><span>Windows</span><span>Unity 6</span><span>~89 MiB</span><span>ZIP</span></div>
+    <a class="btn primary big" href="https://drive.google.com/uc?export=download&id=1Uo8ISX-dGPT79CxuhUvyoJepsbdx8Wtm" target="_blank" rel="noopener noreferrer">↓ Baixar Risk Hunter</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="container foot"><a href="../index.html#jogos">← Voltar ao catálogo</a><span>Risk Hunter • Breno</span><span>© <span id="year"></span> Pixel Plays Place</span></div></footer>
+<script src="risk-hunter.js"></script>
+</body>
+</html>
