@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Resgate Ninja — jogo educativo em Scratch criado por Breno.">
+  <title>Resgate Ninja | Pixel Plays Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resgate-ninja.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a href="../index.html" class="brand">
+      <span class="brand-box">PP</span>
+      <span><strong>PIXEL PLAYS PLACE</strong><small>GAME SHOWCASE</small></span>
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-jogar">Como jogar</a>
+      <a href="#frutas">Frutas</a>
+      <a href="#equipe">Equipe</a>
+    </nav>
+    <span class="scratch-pill">Scratch</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">PROJETO INDIVIDUAL • SCRATCH • EDUCATIVO</span>
+        <h1>RESGATE<br><em>NINJA</em></h1>
+        <p>
+          Um ninja cansado de ver a comida rápida dominar o mundo parte em busca
+          de uma receita secreta capaz de trazer de volta comidas mais saudáveis.
+        </p>
+        <div class="hero-actions">
+          <a href="#como-jogar" class="button primary">Ver como jogar</a>
+          <a href="../index.html#jogos" class="button ghost">Voltar ao catálogo</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>Scratch</b>Plataforma</span>
+          <i></i>
+          <span><b>Breno</b>Desenvolvedor</span>
+          <i></i>
+          <span><b>2D</b>Furtividade & coleta</span>
+        </div>
+      </div>
+
+      <div class="game-scene reveal">
+        <img class="scene-bg" src="../assets/resgate-ninja/fundo.svg" alt="">
+        <div class="scene-title">RESGATE NINJA</div>
+        <img class="ninja" src="../assets/resgate-ninja/ninja.svg" alt="Ninja do jogo">
+        <img class="pizza" src="../assets/resgate-ninja/pizza.svg" alt="Inimigo em forma de pizza">
+        <img class="burger" src="../assets/resgate-ninja/hamburguer.svg" alt="Inimigo em forma de hambúrguer">
+        <div class="fruit fruit-a">🍎</div>
+        <div class="fruit fruit-b">🥝</div>
+        <div class="fruit fruit-c">🍇</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <header class="section-head reveal">
+        <span>01 / A MISSÃO</span>
+        <h2>Recupere a receita e fuja da <em>má alimentação.</em></h2>
+      </header>
+
+      <div class="story-grid">
+        <article class="story-main reveal">
+          <span class="story-number">忍</span>
+          <h3>Uma missão simples com uma ideia educativa.</h3>
+          <p>
+            O objetivo é atravessar os cenários, evitar os vilões e coletar as
+            frutas até alcançar a Receita Secreta.
+          </p>
+          <p>
+            Durante a jornada, cada fruta apresenta uma pequena informação sobre
+            alimentação e benefícios para o corpo.
+          </p>
+        </article>
+
+        <div class="enemy-stack">
+          <article class="enemy-card reveal">
+            <img src="../assets/resgate-ninja/pizza.svg" alt="">
+            <div><strong>Pizza</strong><span>Um dos vilões que patrulham o caminho.</span></div>
+          </article>
+          <article class="enemy-card reveal">
+            <img src="../assets/resgate-ninja/hamburguer.svg" alt="">
+            <div><strong>Hambúrguer</strong><span>Outra ameaça que precisa ser evitada.</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="como-jogar">
+    <div class="container">
+      <header class="section-head reveal">
+        <span>02 / COMO JOGAR</span>
+        <h2>Ande, esconda-se e <em>continue avançando.</em></h2>
+      </header>
+
+      <div class="controls-grid">
+        <article class="control-card reveal">
+          <kbd>A</kbd>
+          <h3>Esquerda</h3>
+          <p>Move o ninja para a esquerda.</p>
+        </article>
+        <article class="control-card reveal">
+          <kbd>D</kbd>
+          <h3>Direita</h3>
+          <p>Move o ninja para a direita.</p>
+        </article>
+        <article class="control-card reveal">
+          <kbd>S</kbd>
+          <h3>Esconder</h3>
+          <p>Use os quadros do cenário para se esconder dos vilões.</p>
+        </article>
+      </div>
+
+      <div class="stealth-note reveal">
+        <span>!</span>
+        <p>O jogo não é sobre derrotar os inimigos: o caminho é observar, se esconder e coletar os itens sem ser pego.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="frutas">
+    <div class="container">
+      <header class="section-head reveal">
+        <span>03 / COLETA</span>
+        <h2>Cada fruta traz uma <em>informação.</em></h2>
+      </header>
+
+      <div class="fruit-grid">
+        <article class="fruit-card apple reveal">
+          <span>🍎</span>
+          <h3>Maçã</h3>
+          <p>O jogo destaca a vitamina C e sua relação com as defesas do corpo.</p>
+        </article>
+        <article class="fruit-card kiwi reveal">
+          <span>🥝</span>
+          <h3>Kiwi</h3>
+          <p>A mensagem fala das fibras e de como elas ajudam o intestino a funcionar bem.</p>
+        </article>
+        <article class="fruit-card grape reveal">
+          <span>🍇</span>
+          <h3>Uvas</h3>
+          <p>O jogo apresenta os antioxidantes e relaciona esse benefício ao cérebro e ao aprendizado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section recipe-section">
+    <div class="container recipe-grid">
+      <div class="recipe-copy reveal">
+        <span class="eyebrow">04 / RECEITA SECRETA</span>
+        <h2>No fim da missão: <em>Salada de Frutas.</em></h2>
+        <p>
+          Depois de recuperar a receita, o jogo ensina uma versão simples:
+          escolher frutas, cortar em pedaços, colocar em um recipiente, adicionar
+          um pouco de mel, misturar e levar à geladeira.
+        </p>
+      </div>
+      <div class="recipe-card reveal">
+        <span class="scroll">📜</span>
+        <strong>RECEITA SECRETA</strong>
+        <div>🍎 + 🥝 + 🍇 + 🍯</div>
+        <small>Uma recompensa que fecha a aventura com a mensagem de alimentação saudável.</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="equipe">
+    <div class="container">
+      <header class="section-head reveal">
+        <span>05 / CRIAÇÃO</span>
+        <h2>Feito por <em>Breno.</em></h2>
+      </header>
+      <article class="creator reveal">
+        <span>B</span>
+        <div>
+          <h3>Breno</h3>
+          <p>Desenvolvedor do Resgate Ninja</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <a href="../index.html#jogos">← Voltar aos jogos</a>
+    <span>Resgate Ninja • Breno</span>
+    <span>© <span id="currentYear"></span> Pixel Plays Place</span>
+  </div>
+</footer>
+
+<script src="resgate-ninja.js"></script>
+</body>
+</html>
