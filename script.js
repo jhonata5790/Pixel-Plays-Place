@@ -188,9 +188,9 @@ const jogos = [
 
     nome: "Lummy Light Knowledge",
 
-    categoria: "grupo",
+    categoria: "marketing",
 
-    categoriaNome: "Projeto em grupo",
+    categoriaNome: "Parceria com Marketing",
 
     tipo: "site",
 
